@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--STYLESHEETs-->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <!--CSS PREPROCESSOR-->
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <!--CSS POSTPROCESSED-->
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <meta charset="utf-8">
+    <title>Mark Tiddy - Portfolio - Work</title>
+</head>
+<body>
+    <header class="page-header">
+        <!-- Add a logo here later-->
+        <!--HEADER-->
+        <a href="index.html"> <img src="img/logo.png" alt="My website's logo" class="page-header__item page-header__logo">
+        </a>        <!--NAVIGATION-->
+        <nav class="main-navigation page-header__item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a href="index.html" role="menuitem" class="navigation-list__item ">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+                    </li>
+                    <li role="presentation">
+                      <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">My Work</a>
+                  </li>
+                    <li role="presentation">
+                        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                    </li>
+                </ul> 
+            </nav>
+        </header>
+    <!--MAIN BODY USING FLEX GRID-->
+    <section class="main-content-area">
+      <h1>My Work</h1>
+      <div class="projects">
+        <div class="projects__item">
+          <h2>Youth Work Resource</h2>
+          <p>A website I run using Wordpress which has been running for over 10 years and has a high hit count each month</p>
+        <a href="http://www.youthworkresource.com" target="_blank" class="button__secondary">More Information</a>
+        </div>
+
+        <div class="projects__item">
+          <h2>100 Questions - Youth App</h2>
+            <p>This Youth Work app was designed by me using XCode and by programming in Swift. The app is programmed to display 1 of a bank of 100 questions to the user and is programmed to not repeat any questions during a session.</p>
+          <a href="http://100-questions-app.marktiddy.co.uk" target="_blank" class="button__secondary">More Information</a>
+        </div>
+
+        <div class="projects__item">
+          <h2>Catch-Em Game</h2>
+          <p>A simple iOS game built using Swift and SpriteKit in XCode.</p>          
+          <a href="http://catch-em-app.marktiddy.co.uk" target="_blank" class="button__secondary">More Information</a>
+        </div>
+
+        <div class="projects__item">
+          <h2>This or That App</h2>
+          <p>An app created using Xcode which presents users with 'either or' choices to make and logs their choice to a Firebase database and shows them how others have voted.</p>          
+          <a href="http://this-or-that-app.marktiddy.co.uk" target="_blank" class="button__secondary">More Information</a>
+        </div>
+
+        
+            
+      </div>
+    </section>
+    <footer class="page-footer">
+        <!--FOOTER-->
+        <p>Find me on</p>
+        
+        <div class="social-media">
+            <a href="http://www.github.com/marktiddy" target="_blank"><img src="img/github.svg" alt="Github"></a>
+            <a href="http://www.twitter.com/marktiddy" target="_blank"><img src="img/twitter.svg" alt="twitter"></a>
+           <a href="https://www.linkedin.com/in/marktiddy/" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+
+        </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+
+</body>
+</html>
+
