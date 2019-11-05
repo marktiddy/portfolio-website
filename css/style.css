@@ -142,11 +142,12 @@ table th, table td {
 max-width: 700px;
 margin: 0 auto;
 padding-top: 50px;
+padding-bottom: 20px;
 }
 
 .profile__portrait {
   float: left;
-  margin-right: 20px;
+  margin-right: 50px;
  min-width: 100px;
  max-width: 250px;
  border-radius: 50%;
