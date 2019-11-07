@@ -98,6 +98,7 @@ table th, table td {
   -webkit-transition: 0.3s opacity;
   -o-transition: 0.3s opacity;
   transition: 0.3s opacity;
+
   
 }
 
@@ -198,11 +199,12 @@ form button {
 max-width: 700px;
 margin: 0 auto;
 padding-top: 50px;
+padding-bottom: 20px;
 }
 
 .profile__portrait {
   float: left;
-  margin-right: 20px;
+  margin-right: 50px;
  min-width: 100px;
  max-width: 250px;
  border-radius: 50%;
@@ -299,36 +301,60 @@ label {
   padding-left: 20px;
 }
 
+/* New CSS Grid Layout */
+.projects-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  justify-items: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-right: 15px;
+
+
+}
+
+.projects-grid__project {
+  background: #e5e5e5;
+  padding: 0px 5px 5px 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  border-radius: 15px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  
+
+}
+
+.projects-grid__project-content {
+  text-align: center;
+
+}
+
+.projects-grid__project-content h2 {
+color: #388699;
+font-weight: 400
+}
+
+.projects-grid__project-link {
+padding-top: 5px;
+text-align: center;
+margin: 15px;
+}
+
 /* CSS GRID FALLBACK */
-.projects__item {
+.projects-grid__item {
   display: inline-block;
   width: 33%;
 }
 
-.projects h2 {
+.projects-grid h2 {
   font-weight: 400;
-}
-
-/* CSS GRID LAYOUT */
-.projects {
-  display:-ms-grid;
-  display:grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  margin-right: 10px;
-  
-}
-
-.projects__item {
-background-color:#e5e5e5;
-padding: 0px 10px 25px 10px;
-text-align: center;
-width: auto;
-}
-
-.projects__item h2 {
-  color: #388699;
 }
 
 .svgGraphic {
@@ -364,16 +390,18 @@ width: auto;
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-  .projects {
--ms-grid-columns: 1fr 20px 1fr;
+  .projects-grid {
+-ms-grid-columns: 1fr 10px 1fr;
 grid-template-columns: 1fr 1fr;
   }
 }
 
 @media all and (max-width: 750px) {
   /*shared code for our ratio of 0 to 750px */
-  .projects {
+  .projects-grid {
     grid-gap: 10px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .projects__item:last-child {
     grid-column: auto / auto;

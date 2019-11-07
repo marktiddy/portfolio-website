@@ -2,7 +2,57 @@ body {
   background: #fcfcfc;
 }
 
-/* More complicated grid with inidvidual classes in the html */
+:root {
+  --primary-color: #388699;
+  --secondary-color: #994b38; 
+  --default-text: #1F1F1F;
+  --off-white: #FDFFFC;
+  --light-grey-color: lightgray;
+  --main-font-size: 16px;
+  --super-light-grey: #e5e5e5;
+  --font-weight-light: 300;
+  --font-weight-medium: 400;
+  --font-weight-heavy: 700;
+  --main-font: 'Open Sans', sans-serif;
+}
+
+
+
+/*Code for new project grid 
+Classes needed projects-grid, projects-grid__project, projects-grid__project-content
+  */
+
+
+.projects-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  justify-items: stretch;
+  align-items: flex-start;
+
+}
+
+.projects-grid__project {
+  background: var(--super-light-grey);
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+
+}
+
+.projects-grid__project-content {
+}
+
+.projects-grid__project-content h1 {
+color: var(--primary-color);
+}
+
+.projects-grid__project-link {
+padding-top: 5px;
+}
+
+  /* More complicated grid with inidvidual classes in the html */
 .wrapper {
   display: grid;
   grid-gap: 10px;
