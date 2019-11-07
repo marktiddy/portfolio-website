@@ -244,13 +244,10 @@ label {
   grid-template-rows: 3fr 1fr;
   border-radius: 15px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  
-
 }
 
 .projects-grid__project-content {
   text-align: center;
-
 }
 
 .projects-grid__project-content h2 {
