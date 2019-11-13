@@ -202,10 +202,23 @@ filter: invert(0.5);
 #contact-form {
   padding: 10px;
   color: var(--primary-color);
+  display: table;
 }
 
 #contact-form button {
   margin-left: 103px;
+}
+
+.form-paragraph {
+  display: table-row;
+}
+
+
+label { 
+  display: table-cell; 
+}
+input { 
+  display: table-cell; 
 }
 
 input, textarea {
@@ -220,7 +233,7 @@ label {
   margin: 10px 10px 10px 0px;
 }
 
-.main-content-area {
+.main-content {
   padding-left: 20px;
 }
 
