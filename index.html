@@ -1,89 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <!--STYLESHEETs-->
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
     <!--CSS PREPROCESSOR-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!--CSS POSTPROCESSED-->
     <!--<link rel="stylesheet" type="text/css" href="css/style.production.css">-->
 
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Mark Tiddy - Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <nav class="main-navigation">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a
+            href="#top"
+            role="menuitem"
+            class="navigation-list__item navigation-list__item--active"
+            >Home</a
+          >
+        </li>
+        <li role="presentation">
+          <a href="#about" role="menuitem" class="navigation-list__item"
+            >About Me</a
+          >
+        </li>
+        <li role="presentation">
+          <a href="#portfolio" role="menuitem" class="navigation-list__item"
+            >Projects</a
+          >
+        </li>
+        <li role="presentation">
+          <a href="#contact" role="menuitem" class="navigation-list__item"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
     <!--HEADER-->
-    <header class="page-header">
-        <!--Header Image-->
+    <header class="page-header" id="top">
+      <!--Header Image-->
 
-        <div class="page-header__image">
-            <!--NAVIGATION-->
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem"
-                            class="navigation-list__item navigation-list__item--active">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" role="menuitem" class="navigation-list__item">My Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                    </li>
+      <!--NAVIGATION-->
 
-                </ul>
-            </nav>
-
-            <div class="header--text">
-                <a href="index.html">
-                    <h1>MARK TIDDY</h1>
-                </a>
-                <p>FULL STACK DEVELOPER<br>
-                    HTML | CSS | JAVASCRIPT
-                </p>
-
-            </div>
+      <div class="header--container">
+        <div class="header--item__image">
+          <img src="logo.png" alt="Mark Tiddy Logo" />
         </div>
-
-
-
+        <div class="header--item">
+          <p>FULL STACK <br />DEVELOPER</p>
+        </div>
+      </div>
     </header>
-    <div class="profile">
-        <!--MAIN BODY-->
-
-        <img src="img/profile_pic.jpg" alt="A photo of Mark" class="profile__portrait">
-        <h1>Mark Tiddy - Portfolio</h1>
+    <!--MAIN BODY-->
+    <div class="profile" id="about">
+      <div class="profile__item">
+        <h1>MARK TIDDY - PORTFOLIO</h1>
         <p>
-            My name is Mark and I am a web developer from Colchester in the UK.
+          My name is Mark and I am a web developer from Colchester in the UK.
         </p>
-
-    </div>
-    <div class="home-buttons">
-        <a href="http://github.com/marktiddy" target="_blank" class="button">View My Work</a>
-        <a href="contact.html" class="button__secondary">Contact Me</a>
-    </div>
-    <footer class="page-footer">
-        <!--FOOTER-->
-        <p>Find me on</p>
-        <div class="social-media">
-            <a href="http://www.github.com/marktiddy" target="_blank"><img src="img/github.svg" alt="Github"></a>
-            <a href="http://www.twitter.com/marktiddy" target="_blank"><img src="img/twitter.svg" alt="twitter"></a>
-            <a href="#" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
-
+        <div class="home-buttons">
+          <a href="http://github.com/marktiddy" target="_blank" class="button"
+            >View My Work</a
+          >
+          <a href="contact.html" class="button__secondary">Contact Me</a>
         </div>
+      </div>
+      <div class="profile__item">
+        <img
+          src="img/profile_pic.jpg"
+          alt="A photo of Mark"
+          class="profile__portrait"
+        />
+      </div>
+    </div>
 
+    <!--PROJECT GRID-->
+    <div class="projects-title" id="portfolio">
+      MY WORK
+    </div>
+    <div class="projects-grid">
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/ywr.jpg" alt="" />
+          <a href="http://www.youthworkresource.com" target="_blank">
+            <p class="pri-background">Youth Work Resource Website</p>
+          </a>
+        </div>
+        <div class="projects__grid--content primary-text">
+          A website I run using Wordpress which has been running for over 10
+          years and has a high hit count each month. The website provides
+          resources for church-based youth workers.
+        </div>
+        <div class="projects__grid--base">
+          <a href="#" target="_blank" class="button">View Project</a>
+          <a href="#" class="button">View the Code</a>
+        </div>
+      </div>
 
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/100questions.jpg" alt="" />
+          <a href="#" target="_blank">
+            <p class="sec-background">100 Questions - Youth (iOS)</p>
+          </a>
+        </div>
+        <div class="projects__grid--content secondary-text">
+          This Youth Work app was designed by me using XCode and by programming
+          in Swift. The app is programmed to display 1 of a bank of 100
+          questions to the user and is programmed to not repeat any questions
+          during a session.
+        </div>
+        <div class="projects__grid--base">
+          <a href="#" target="_blank" class="button__secondary">View Project</a>
+          <a href="#" class="button__secondary">View the Code</a>
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/catchem.jpg" alt="" />
+          <a href="#" target="_blank">
+            <p class="pri-background">Catch 'Em Game (iOS App)</p>
+          </a>
+        </div>
+        <div class="projects__grid--content primary-text">
+          An app designed in Xcode using SpriteKit which challenges users to
+          catch and match coloured balls at varying levels of difficulty. The
+          app serves adMob apps in order to generate a small income.
+        </div>
+        <div class="projects__grid--base">
+          <a href="#" target="_blank" class="button">View Project</a>
+          <a href="#" class="button">View the Code</a>
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/usatip.jpg" alt="" />
+          <a href="#" target="_blank">
+            <p class="sec-background">USA Tip Calculator (iOS App)</p>
+          </a>
+        </div>
+        <div class="projects__grid--content secondary-text">
+          A simple yet effective tool to help users calculate the amount they
+          wish to tip based on their bill.
+        </div>
+        <div class="projects__grid--base">
+          <a href="#" target="_blank" class="button__secondary">View Project</a>
+          <a href="#" class="button__secondary">View the Code</a>
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <a href="#" target="_blank">
+            <img src="img/work/thisorthat.jpg" alt="" />
+            <p class="pri-background">This or That (iOS App)</p>
+          </a>
+        </div>
+        <div class="projects__grid--content primary-text">
+          An app created using Xcode which presents users with 'either or'
+          choices to make and logs their choice to a Firebase database and shows
+          them how others have voted.
+        </div>
+        <div class="projects__grid--base">
+          <a href="#" target="_blank" class="button">View Project</a>
+          <a href="#" class="button">View the Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="contact-item">
+        <h1>Get in touch</h1>
+        <p><em>Use the details below or form to contact me</em></p>
+        <p class="contact-into">
+          <strong>Tel: </strong> <a href="tel:+447845349542">+44 7845 349542</a
+          ><br />
+          <strong>Email: </strong
+          ><a href="mailto:hello@marktiddy.co.uk?subject=Hello%20Mark!"
+            >hello@marktiddy.co.uk</a
+          ><br />
+          <strong><a href="skype:marktiddy_1">Skype</a></strong>
+        </p>
+      </div>
+      <div class="contact-item">
+        <form class="cf">
+          <div class="half left cf">
+            <input type="text" id="input-name" placeholder="Name" />
+            <input type="email" id="input-email" placeholder="Email address" />
+          </div>
+          <div class="half right cf">
+            <textarea
+              name="message"
+              id="input-message"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <input type="submit" value="Submit" id="input-submit" />
+        </form>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <!--FOOTER-->
+      <h3>FOLLOW ME</h3>
+      <div class="social-media">
+        <a href="http://www.github.com/marktiddy" target="_blank"
+          ><img src="img/github.svg" alt="Github" class="social-svg"
+        /></a>
+        <a href="http://www.twitter.com/marktiddy" target="_blank"
+          ><img src="img/twitter.svg" alt="twitter" class="social-svg"
+        /></a>
+        <a href="#" target="_blank"
+          ><img src="img/linkedin.svg" alt="LinkedIn" class="social-svg"
+        /></a>
+      </div>
     </footer>
-    <!--<script src="js/tota11y.min.js"></script>-->
-
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
