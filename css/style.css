@@ -113,7 +113,7 @@ a {
   text-transform: uppercase;
   border-color: var(--super-light-grey);
   border: 1px solid var(--off-white);
-  border-radius: 2%;
+  border-radius: 1%;
 }
 
 .navigation-list__item:hover {
@@ -148,7 +148,7 @@ a {
   margin-left: 20px;
   min-width: 100px;
   max-width: 250px;
-  border-radius: 2%;
+  border-radius: 1%;
   border: 3px solid var(--primary-color);
 }
 
@@ -168,7 +168,7 @@ a {
   color: var(--primary-color);
   text-decoration: none;
   padding: 10px;
-  border-radius: 3%;
+  border-radius: 1%;
   font-weight: var(--font-weight-light);
   margin-left: 10px;
   /*Button Animation*/
@@ -186,7 +186,7 @@ form button {
   background-color: var(--off-white);
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
-  border-radius: 3%;
+  border-radius: 1%;
 }
 
 .button__secondary:hover,
@@ -264,7 +264,7 @@ form button {
   text-align: center;
   color: var(--off-white);
   padding: 30px;
-  border-radius: 5%;
+  border-radius: 1%;
   opacity: 0.95;
   font-size: 20px;
   transition: all 0.2s ease-in-out;
@@ -309,6 +309,7 @@ form button {
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-content: flex-start;
+  padding-right: 10px;
 }
 
 .contact-item {
@@ -381,6 +382,16 @@ textarea {
 
 textarea {
   height: 117px;
+}
+
+.contact-item .error {
+  border: 1px solid var(--off-white);
+  text-align: left;
+  font-size: 12px;
+  padding: 5px 5px 5px 5px;
+  background-color: darkred;
+  color: var(--off-white);
+  display: none;
 }
 
 .half {

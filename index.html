@@ -26,21 +26,34 @@
             href="#top"
             role="menuitem"
             class="navigation-list__item navigation-list__item--active"
+            id="home-button"
             >Home</a
           >
         </li>
         <li role="presentation">
-          <a href="#about" role="menuitem" class="navigation-list__item"
+          <a
+            href="#about"
+            role="menuitem"
+            class="navigation-list__item"
+            id="about-button"
             >About Me</a
           >
         </li>
         <li role="presentation">
-          <a href="#portfolio" role="menuitem" class="navigation-list__item"
+          <a
+            href="#portfolio"
+            role="menuitem"
+            class="navigation-list__item"
+            id="portfolio-button"
             >Projects</a
           >
         </li>
         <li role="presentation">
-          <a href="#contact" role="menuitem" class="navigation-list__item"
+          <a
+            href="#contact"
+            role="menuitem"
+            class="navigation-list__item"
+            id="contact-button"
             >Contact</a
           >
         </li>
@@ -198,7 +211,11 @@
         <form class="cf">
           <div class="half left cf">
             <input type="text" id="input-name" placeholder="Name" />
+            <p class="error" id="name-error">ERROR: Please enter a name</p>
             <input type="email" id="input-email" placeholder="Email address" />
+            <p class="error" id="email-error">
+              ERROR: Please enter a valid email address
+            </p>
           </div>
           <div class="half right cf">
             <textarea
@@ -206,8 +223,11 @@
               id="input-message"
               placeholder="Message"
             ></textarea>
+            <p class="error" id="message-error">
+              ERROR: Please enter a message
+            </p>
           </div>
-          <input type="submit" value="Submit" id="input-submit" />
+          <input type="submit" value="Send Message" id="input-submit" />
         </form>
       </div>
     </div>
@@ -232,6 +252,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
