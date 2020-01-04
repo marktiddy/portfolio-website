@@ -29,9 +29,7 @@ $(document).ready(function() {
   //some code for the menu classes
   $(".navigation-list__item").click(function(e) {
     var listOfItems = $(".navigation-list__item");
-
     listOfItems.removeClass("navigation-list__item--active");
-
     if ($(this).hasClass("navigation-list__item--active")) {
       $(this).removeClass("navigation-list__item--active");
     } else {
@@ -41,13 +39,13 @@ $(document).ready(function() {
 });
 
 //Code to update menu classes as we scroll
-$("#home").waypoint(
+$("#top").waypoint(
   function(direction) {
     $(".navigation-list__item").removeClass("navigation-list__item--active");
     $("#home-button").addClass("navigation-list__item--active");
   },
   {
-    offset: "-15%"
+    offset: "-20%"
   }
 );
 
@@ -70,6 +68,7 @@ $("#contact").waypoint(
     offset: "45%"
   }
 );
+
 //form Validation
 
 $("#input-submit").on("click", function(event) {
