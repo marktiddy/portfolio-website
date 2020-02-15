@@ -81,11 +81,17 @@
         <p>
           My name is Mark and I am a web developer from Colchester in the UK.
         </p>
+
+        <p>
+          I have experience of the following techologies: HTML, CSS, JavaScript,
+          Node.js, Express.js, SQL, MongoDB, Swift, React, Vue.js and Angular. I
+          am also used to working with GitHub for source control.
+        </p>
         <div class="home-buttons">
           <a href="http://github.com/marktiddy" target="_blank" class="button"
-            >View My Work</a
+            >View My Code</a
           >
-          <a href="contact.html" class="button__secondary">Contact Me</a>
+          <a href="#contact" class="button__secondary">Contact Me</a>
         </div>
       </div>
       <div class="profile__item">
@@ -98,52 +104,77 @@
     </div>
 
     <!--PROJECT GRID-->
-    <div class="projects-title" id="portfolio">
-      MY WORK
-    </div>
+    <div class="projects-title" id="portfolio">PROJECTS</div>
+
     <div class="projects-grid">
       <div class="projects-grid__item">
         <div class="projects-grid-top">
           <img src="img/work/ywr.jpg" alt="" />
           <a href="http://www.youthworkresource.com" target="_blank">
-            <p class="pri-background">Youth Work Resource Website</p>
+            <p class="pri-background">
+              Youth Work Resource<br /><span class="subtitle">(Website)</span>
+            </p>
           </a>
         </div>
         <div class="projects__grid--content primary-text">
-          A website I run using Wordpress which has been running for over 10
-          years and has a high hit count each month. The website provides
+          A website based on Wordpress using third party plugins and graphics
+          I've created which has been running for over 10 years with an average
+          monthly reach of 5,000 users. The website contains a wide-range of
           resources for church-based youth workers.
         </div>
         <div class="projects__grid--base">
-          <a href="#" target="_blank" class="button">View Project</a>
-          <a href="#" class="button">View the Code</a>
+          <a
+            href="http://www.youthworkresource.com"
+            target="_blank"
+            class="button"
+            >Visit Website</a
+          >
         </div>
       </div>
 
       <div class="projects-grid__item">
         <div class="projects-grid-top">
           <img src="img/work/100questions.jpg" alt="" />
-          <a href="#" target="_blank">
-            <p class="sec-background">100 Questions - Youth (iOS)</p>
+          <a
+            href="https://apps.apple.com/us/app/100-questions-youth/id1387964565"
+            target="_blank"
+          >
+            <p class="sec-background">
+              100 Questions - Youth<br /><span class="subtitle"
+                >(iOS & Android App)</span
+              >
+            </p>
           </a>
         </div>
         <div class="projects__grid--content secondary-text">
-          This Youth Work app was designed by me using XCode and by programming
-          in Swift. The app is programmed to display 1 of a bank of 100
-          questions to the user and is programmed to not repeat any questions
-          during a session.
+          This app was designed by my using Xcode and Apple's Swift language for
+          iOS and using Google's Flutter for Android. The app is programmed to
+          display 1 of a bank of 100 questions to the user and is programmed to
+          not repeat any questions during a session.
         </div>
         <div class="projects__grid--base">
-          <a href="#" target="_blank" class="button__secondary">View Project</a>
-          <a href="#" class="button__secondary">View the Code</a>
+          <a
+            href="https://apps.apple.com/us/app/100-questions-youth/id1387964565"
+            target="_blank"
+            class="button__secondary"
+            >View App</a
+          >
+          <a
+            href="https://github.com/marktiddy/100-Questions"
+            class="button__secondary"
+            target="_blank"
+            >View the Code</a
+          >
         </div>
       </div>
 
       <div class="projects-grid__item">
         <div class="projects-grid-top">
           <img src="img/work/catchem.jpg" alt="" />
-          <a href="#" target="_blank">
-            <p class="pri-background">Catch 'Em Game (iOS App)</p>
+          <a href="https://apps.apple.com/us/app/id1478144468" target="_blank">
+            <p class="pri-background">
+              Catch 'Em Game<br /><span class="subtitle">(iOS App)</span>
+            </p>
           </a>
         </div>
         <div class="projects__grid--content primary-text">
@@ -152,8 +183,137 @@
           app serves adMob apps in order to generate a small income.
         </div>
         <div class="projects__grid--base">
-          <a href="#" target="_blank" class="button">View Project</a>
-          <a href="#" class="button">View the Code</a>
+          <a
+            href="https://apps.apple.com/us/app/id1478144468"
+            target="_blank"
+            class="button"
+            >View App</a
+          >
+          <a
+            href="https://github.com/marktiddy/CatchEm"
+            target="_blank"
+            class="button"
+            >View the Code</a
+          >
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/movie_api.jpg" alt="" />
+          <a href="http://mtiddy-myflix.herokuapp.com/client/" target="_blank">
+            <p class="sec-background">
+              myFlix Application<br /><span class="subtitle"
+                >React Movie Website</span
+              >
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content secondary-text">
+          A website showing details of movies, directors and genres.
+          <br />
+          <strong>Server-side</strong> - Data hosted using MongoDB and RESTapi
+          written in Express.js<br />
+          <strong>Client-side</strong> - Created using React and React-redux
+          with layout from React Bootstrap.
+        </div>
+        <div class="projects__grid--base">
+          <a
+            href="http://mtiddy-myflix.herokuapp.com/client/"
+            target="_blank"
+            class="button__secondary"
+            >Visit Website</a
+          >
+          <a
+            href="https://github.com/marktiddy/movie_api"
+            target="_blank"
+            class="button__secondary"
+            >View the Code</a
+          >
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/vue_todo.jpg" alt="" />
+          <a href="https://marktiddy.github.io/todo" target="_blank">
+            <p class="pri-background">
+              Tick List<br /><span class="subtitle">(Vue.js Website)</span>
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content primary-text">
+          A todo list web app created using Vue.js and styled using Material
+          design components. The app implements local storage to allow users to
+          reload their list. Items can be updated, deleted and ticked off.
+        </div>
+        <div class="projects__grid--base">
+          <a
+            href="https://marktiddy.github.io/todo"
+            target="_blank"
+            class="button"
+            >Visit Website</a
+          >
+          <a
+            href="https://github.com/marktiddy/todo"
+            target="_blank"
+            class="button"
+            >View the Code</a
+          >
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/angular_quiz.jpg" alt="" />
+          <a
+            href="https://marktiddy.github.io/my-awesome-quiz-app"
+            target="_blank"
+          >
+            <p class="sec-background">
+              Quiz App<br /><span class="subtitle">(Angular Quiz Website)</span>
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content secondary-text">
+          A quiz app built using Angular and styled using Material design
+          elements. The app let's a user choose a quiz to have a go at and
+          records their answers.
+        </div>
+        <div class="projects__grid--base">
+          <a href="#" target="_blank" class="button__secondary">View App</a>
+          <a href="#" target="_blank" class="button__secondary"
+            >View the Code</a
+          >
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/music_mentoring.jpg" alt="" />
+          <a href="https://marktiddy.github.io/music-mentoring" target="_blank">
+            <p class="pri-background">
+              Music Mentoring<br /><span class="subtitle">(Website)</span>
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content primary-text">
+          A one-page website built using Bootstrap and some custom JavaScript
+          for a youth work project.
+        </div>
+        <div class="projects__grid--base">
+          <a
+            href="https://marktiddy.github.io/music-mentoring"
+            target="_blank"
+            class="button"
+            >View App</a
+          >
+          <a
+            href="https://github.com/marktiddy/music-mentoring"
+            target="_blank"
+            class="button"
+            >View the Code</a
+          >
         </div>
       </div>
 
@@ -161,16 +321,28 @@
         <div class="projects-grid-top">
           <img src="img/work/usatip.jpg" alt="" />
           <a href="#" target="_blank">
-            <p class="sec-background">USA Tip Calculator (iOS App)</p>
+            <p class="sec-background">
+              USA Tip Calculator <br /><span class="subtitle">(iOS App)</span>
+            </p>
           </a>
         </div>
         <div class="projects__grid--content secondary-text">
           A simple yet effective tool to help users calculate the amount they
-          wish to tip based on their bill.
+          wish to tip based on their bill. This was programmed in Swift.
         </div>
         <div class="projects__grid--base">
-          <a href="#" target="_blank" class="button__secondary">View Project</a>
-          <a href="#" class="button__secondary">View the Code</a>
+          <a
+            href="https://apps.apple.com/us/app/usa-tip-calculator/id1434886406"
+            target="_blank"
+            class="button__secondary"
+            >View App</a
+          >
+          <a
+            href="https://github.com/marktiddy/USA-Tip-Calc"
+            target="_blank"
+            class="button__secondary"
+            >View the Code</a
+          >
         </div>
       </div>
 
@@ -178,7 +350,9 @@
         <div class="projects-grid-top">
           <a href="#" target="_blank">
             <img src="img/work/thisorthat.jpg" alt="" />
-            <p class="pri-background">This or That (iOS App)</p>
+            <p class="pri-background">
+              This or That <br /><span class="subtitle">(iOS App)</span>
+            </p>
           </a>
         </div>
         <div class="projects__grid--content primary-text">
@@ -187,8 +361,12 @@
           them how others have voted.
         </div>
         <div class="projects__grid--base">
-          <a href="#" target="_blank" class="button">View Project</a>
-          <a href="#" class="button">View the Code</a>
+          <a
+            href="https://apps.apple.com/us/app/this-or-that-app/id1465745347?ls=1"
+            target="_blank"
+            class="button"
+            >View App</a
+          >
         </div>
       </div>
     </div>
@@ -208,7 +386,12 @@
         </p>
       </div>
       <div class="contact-item">
-        <form class="cf">
+        <form
+          class="cf"
+          action="mailto:hello@marktiddy.co.uk"
+          method="post"
+          enctype="text/plain"
+        >
           <div class="half left cf">
             <input type="text" id="input-name" placeholder="Name" />
             <p class="error" id="name-error">ERROR: Please enter a name</p>
@@ -237,13 +420,28 @@
       <h3>FOLLOW ME</h3>
       <div class="social-media">
         <a href="http://www.github.com/marktiddy" target="_blank"
-          ><img src="img/github.svg" alt="Github" class="social-svg"
+          ><img
+            src="img/social_icons/github.png"
+            alt="Github"
+            class="social-svg"
         /></a>
         <a href="http://www.twitter.com/marktiddy" target="_blank"
-          ><img src="img/twitter.svg" alt="twitter" class="social-svg"
+          ><img
+            src="img/social_icons/twitter.png"
+            alt="twitter"
+            class="social-svg"
         /></a>
-        <a href="#" target="_blank"
-          ><img src="img/linkedin.svg" alt="LinkedIn" class="social-svg"
+        <a href="https://www.linkedin.com/in/marktiddy" target="_blank"
+          ><img
+            src="img/social_icons/linkedin.png"
+            alt="LinkedIn"
+            class="social-svg"
+        /></a>
+        <a href="http://www.youtube.com/markstechvlogs" target="_blank"
+          ><img
+            src="img/social_icons/youtube.png"
+            alt="YouTube"
+            class="social-svg"
         /></a>
       </div>
     </footer>
@@ -256,3 +454,26 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+
+<!--
+
+    <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="https://via.placeholder.com/350x150" alt="" />
+          <a href="#" target="_blank">
+            <p class="pri-background">
+              title<br /><span class="subtitle">(Desc)</span>
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content primary-text">
+          Description
+        </div>
+        <div class="projects__grid--base">
+          <a href="#" target="_blank" class="button">View App</a>
+          <a href="#" target="_blank" class="button">View the Code</a>
+        </div>
+      </div>
+
+
+-->
