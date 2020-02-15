@@ -147,9 +147,4 @@ function mobileMenu() {
     isMenuVisible = true;
     bars.show();
   }
-
-  // var x = document.getElementById("mobile-nav__links");
-  // if (x.style.display === "block") {
-  //   x.style.display = "none";
-  // } else x.style.display = "block";
 }
