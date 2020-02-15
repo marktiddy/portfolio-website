@@ -1,83 +1,496 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico">
+  =======
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    >>>>>>> new-design
     <!--STYLESHEETs-->
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
     <!--CSS PREPROCESSOR-->
-    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!--CSS POSTPROCESSED-->
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/style.production.css">-->
 
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Mark Tiddy - Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <nav class="main-navigation">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a
+            href="javascript:void(0)"
+            onclick="mobileMenu()"
+            role="menuitem"
+            class="navigation-list__bars"
+            id="mobile-bars"
+            ><i class="fa fa-bars"></i
+          ></a>
+        </li>
+        <li role="presentation">
+          <a
+            href="#top"
+            role="menuitem"
+            class="navigation-list__item navigation-list__item--active"
+            id="home-button"
+            >Home</a
+          >
+        </li>
+        <li role="presentation">
+          <a
+            href="#about"
+            role="menuitem"
+            class="navigation-list__item"
+            id="about-button"
+            >About Me</a
+          >
+        </li>
+        <li role="presentation">
+          <a
+            href="#portfolio"
+            role="menuitem"
+            class="navigation-list__item"
+            id="portfolio-button"
+            >Projects</a
+          >
+        </li>
+        <li role="presentation">
+          <a
+            href="#contact"
+            role="menuitem"
+            class="navigation-list__item"
+            id="contact-button"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-    <header class="page-header">
-        <!-- Add a logo here later-->
-        <!--HEADER-->
-        <a href="index.html"> <img src="img/logo.png" alt="My website's logo"
-                class="page-header__item page-header__logo">
-        </a>
+    <!--HEADER-->
+    <header class="page-header" id="top">
+      <!--Header Image-->
 
-        <!--NAVIGATION-->
-
-
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem"
-                        class="navigation-list__item navigation-list__item--active">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">My Work</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
-
-            </ul>
-        </nav>
-
-
+      <div class="header--container">
+        <div class="header--item__image" id="logo-section">
+          <img src="logo.png" alt="Mark Tiddy Logo" />
+        </div>
+        <div class="header--item">
+          <p>FULL STACK <br />DEVELOPER</p>
+        </div>
+      </div>
     </header>
-    <div class="profile">
-        <!--MAIN BODY-->
-
-        <img src="img/profile_pic.jpg" alt="A photo of Mark" class="profile__portrait">
-        <h1>Mark Tiddy - Portfolio</h1>
+    <!--MAIN BODY-->
+    <div class="profile" id="about">
+      <div class="profile__item">
+        <h1>MARK TIDDY - PORTFOLIO</h1>
         <p>
-            My name is Mark and I am a web developer from Colchester in the UK.
+          My name is Mark and I am a web developer from Colchester in the UK.
         </p>
 
-    </div>
-    <div class="home-buttons">
-        <a href="http://github.com/marktiddy" target="_blank" class="button">View My Work</a>
-        <a href="contact.html" class="button__secondary">Contact Me</a>
-    </div>
-    <footer class="page-footer">
-        <!--FOOTER-->
-        <p>Find me on</p>
-        <div class="social-media">
-            <a href="http://www.github.com/marktiddy" target="_blank"><img src="img/github.svg" alt="Github"></a>
-            <a href="http://www.twitter.com/marktiddy" target="_blank"><img src="img/twitter.svg" alt="twitter"></a>
-            <a href="#" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
-
+        <p>
+          I have experience of the following techologies: HTML, CSS, JavaScript,
+          Node.js, Express.js, SQL, MongoDB, Swift, React, Vue.js and Angular. I
+          am also used to working with GitHub for source control.
+        </p>
+        <div class="home-buttons">
+          <a href="http://github.com/marktiddy" target="_blank" class="button"
+            >View My Code</a
+          >
+          <a href="#contact" class="button__secondary">Contact Me</a>
         </div>
+      </div>
+      <div class="profile__item">
+        <img
+          src="img/profile_pic.jpg"
+          alt="A photo of Mark"
+          class="profile__portrait"
+        />
+      </div>
+    </div>
 
+    <!--PROJECT GRID-->
+    <div class="projects-title" id="portfolio">PROJECTS</div>
 
+    <div class="projects-grid">
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/ywr.jpg" alt="" />
+          <a href="http://www.youthworkresource.com" target="_blank">
+            <p class="pri-background">
+              Youth Work Resource<br /><span class="subtitle">(Website)</span>
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content primary-text">
+          A website based on Wordpress using third party plugins and graphics
+          I've created which has been running for over 10 years with an average
+          monthly reach of 5,000 users. The website contains a wide-range of
+          resources for church-based youth workers.
+        </div>
+        <div class="projects__grid--base">
+          <a
+            href="http://www.youthworkresource.com"
+            target="_blank"
+            class="button"
+            >Visit Website</a
+          >
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/100questions.jpg" alt="" />
+          <a
+            href="https://apps.apple.com/us/app/100-questions-youth/id1387964565"
+            target="_blank"
+          >
+            <p class="sec-background">
+              100 Questions - Youth<br /><span class="subtitle"
+                >(iOS & Android App)</span
+              >
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content secondary-text">
+          This app was designed by my using Xcode and Apple's Swift language for
+          iOS and using Google's Flutter for Android. The app is programmed to
+          display 1 of a bank of 100 questions to the user and is programmed to
+          not repeat any questions during a session.
+        </div>
+        <div class="projects__grid--base">
+          <a
+            href="https://apps.apple.com/us/app/100-questions-youth/id1387964565"
+            target="_blank"
+            class="button__secondary"
+            >View App</a
+          >
+          <a
+            href="https://github.com/marktiddy/100-Questions"
+            class="button__secondary"
+            target="_blank"
+            >View the Code</a
+          >
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/catchem.jpg" alt="" />
+          <a href="https://apps.apple.com/us/app/id1478144468" target="_blank">
+            <p class="pri-background">
+              Catch 'Em Game<br /><span class="subtitle">(iOS App)</span>
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content primary-text">
+          An app designed in Xcode using SpriteKit which challenges users to
+          catch and match coloured balls at varying levels of difficulty. The
+          app serves adMob apps in order to generate a small income.
+        </div>
+        <div class="projects__grid--base">
+          <a
+            href="https://apps.apple.com/us/app/id1478144468"
+            target="_blank"
+            class="button"
+            >View App</a
+          >
+          <a
+            href="https://github.com/marktiddy/CatchEm"
+            target="_blank"
+            class="button"
+            >View the Code</a
+          >
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/movie_api.jpg" alt="" />
+          <a href="http://mtiddy-myflix.herokuapp.com/client/" target="_blank">
+            <p class="sec-background">
+              myFlix Application<br /><span class="subtitle"
+                >React Movie Website</span
+              >
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content secondary-text">
+          A website showing details of movies, directors and genres.
+          <br />
+          <strong>Server-side</strong> - Data hosted using MongoDB and RESTapi
+          written in Express.js<br />
+          <strong>Client-side</strong> - Created using React and React-redux
+          with layout from React Bootstrap.
+        </div>
+        <div class="projects__grid--base">
+          <a
+            href="http://mtiddy-myflix.herokuapp.com/client/"
+            target="_blank"
+            class="button__secondary"
+            >Visit Website</a
+          >
+          <a
+            href="https://github.com/marktiddy/movie_api"
+            target="_blank"
+            class="button__secondary"
+            >View the Code</a
+          >
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/vue_todo.jpg" alt="" />
+          <a href="https://marktiddy.github.io/todo" target="_blank">
+            <p class="pri-background">
+              Tick List<br /><span class="subtitle">(Vue.js Website)</span>
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content primary-text">
+          A todo list web app created using Vue.js and styled using Material
+          design components. The app implements local storage to allow users to
+          reload their list. Items can be updated, deleted and ticked off.
+        </div>
+        <div class="projects__grid--base">
+          <a
+            href="https://marktiddy.github.io/todo"
+            target="_blank"
+            class="button"
+            >Visit Website</a
+          >
+          <a
+            href="https://github.com/marktiddy/todo"
+            target="_blank"
+            class="button"
+            >View the Code</a
+          >
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/angular_quiz.jpg" alt="" />
+          <a
+            href="https://marktiddy.github.io/my-awesome-quiz-app"
+            target="_blank"
+          >
+            <p class="sec-background">
+              Quiz App<br /><span class="subtitle">(Angular Quiz Website)</span>
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content secondary-text">
+          A quiz app built using Angular and styled using Material design
+          elements. The app let's a user choose a quiz to have a go at and
+          records their answers.
+        </div>
+        <div class="projects__grid--base">
+          <a href="#" target="_blank" class="button__secondary">View App</a>
+          <a href="#" target="_blank" class="button__secondary"
+            >View the Code</a
+          >
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/music_mentoring.jpg" alt="" />
+          <a href="https://marktiddy.github.io/music-mentoring" target="_blank">
+            <p class="pri-background">
+              Music Mentoring<br /><span class="subtitle">(Website)</span>
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content primary-text">
+          A one-page website built using Bootstrap and some custom JavaScript
+          for a youth work project.
+        </div>
+        <div class="projects__grid--base">
+          <a
+            href="https://marktiddy.github.io/music-mentoring"
+            target="_blank"
+            class="button"
+            >View App</a
+          >
+          <a
+            href="https://github.com/marktiddy/music-mentoring"
+            target="_blank"
+            class="button"
+            >View the Code</a
+          >
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="img/work/usatip.jpg" alt="" />
+          <a href="#" target="_blank">
+            <p class="sec-background">
+              USA Tip Calculator <br /><span class="subtitle">(iOS App)</span>
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content secondary-text">
+          A simple yet effective tool to help users calculate the amount they
+          wish to tip based on their bill. This was programmed in Swift.
+        </div>
+        <div class="projects__grid--base">
+          <a
+            href="https://apps.apple.com/us/app/usa-tip-calculator/id1434886406"
+            target="_blank"
+            class="button__secondary"
+            >View App</a
+          >
+          <a
+            href="https://github.com/marktiddy/USA-Tip-Calc"
+            target="_blank"
+            class="button__secondary"
+            >View the Code</a
+          >
+        </div>
+      </div>
+
+      <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <a href="#" target="_blank">
+            <img src="img/work/thisorthat.jpg" alt="" />
+            <p class="pri-background">
+              This or That <br /><span class="subtitle">(iOS App)</span>
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content primary-text">
+          An app created using Xcode which presents users with 'either or'
+          choices to make and logs their choice to a Firebase database and shows
+          them how others have voted.
+        </div>
+        <div class="projects__grid--base">
+          <a
+            href="https://apps.apple.com/us/app/this-or-that-app/id1465745347?ls=1"
+            target="_blank"
+            class="button"
+            >View App</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="contact-item">
+        <h1>GET IN TOUCH</h1>
+        <p>Use the details below or complete the form to contact me</p>
+        <p class="contact-into">
+          <strong>Tel: </strong> <a href="tel:+447845349542">+44 7845 349542</a
+          ><br />
+          <strong>Email: </strong
+          ><a href="mailto:hello@marktiddy.co.uk?subject=Hello%20Mark!"
+            >hello@marktiddy.co.uk</a
+          ><br />
+          <strong><a href="skype:marktiddy_1">Skype</a></strong>
+        </p>
+      </div>
+      <div class="contact-item">
+        <form class="cf">
+          <div class="half left cf">
+            <input type="text" id="input-name" placeholder="Name" />
+            <p class="error" id="name-error">ERROR: Please enter a name</p>
+            <input type="email" id="input-email" placeholder="Email address" />
+            <p class="error" id="email-error">
+              ERROR: Please enter a valid email address
+            </p>
+          </div>
+          <div class="half right cf">
+            <textarea
+              name="message"
+              id="input-message"
+              placeholder="Message"
+            ></textarea>
+            <p class="error" id="message-error">
+              ERROR: Please enter a message
+            </p>
+          </div>
+          <input type="submit" value="Send Message" id="input-submit" />
+          <p class="success" id="sent-message">
+            SUCCESS! - Your message has been sent!
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <!--FOOTER-->
+      <h3>
+        FOLLOW ME
+        <hr />
+      </h3>
+      <div class="social-media">
+        <a href="http://www.github.com/marktiddy" target="_blank"
+          ><img
+            src="img/social_icons/github.png"
+            alt="Github"
+            class="social-svg"
+        /></a>
+        <a href="http://www.twitter.com/marktiddy" target="_blank"
+          ><img
+            src="img/social_icons/twitter.png"
+            alt="twitter"
+            class="social-svg"
+        /></a>
+        <a href="https://www.linkedin.com/in/marktiddy" target="_blank"
+          ><img
+            src="img/social_icons/linkedin.png"
+            alt="LinkedIn"
+            class="social-svg"
+        /></a>
+        <a href="http://www.youtube.com/markstechvlogs" target="_blank"
+          ><img
+            src="img/social_icons/youtube.png"
+            alt="YouTube"
+            class="social-svg"
+        /></a>
+      </div>
     </footer>
-    <!--<script src="js/tota11y.min.js"></script>-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/script.js"></script>
-
-</body>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
 </html>
+
+<!--
+
+    <div class="projects-grid__item">
+        <div class="projects-grid-top">
+          <img src="https://via.placeholder.com/350x150" alt="" />
+          <a href="#" target="_blank">
+            <p class="pri-background">
+              title<br /><span class="subtitle">(Desc)</span>
+            </p>
+          </a>
+        </div>
+        <div class="projects__grid--content primary-text">
+          Description
+        </div>
+        <div class="projects__grid--base">
+          <a href="#" target="_blank" class="button">View App</a>
+          <a href="#" target="_blank" class="button">View the Code</a>
+        </div>
+      </div>
+
+
+-->
