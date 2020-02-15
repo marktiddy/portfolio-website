@@ -75,10 +75,45 @@ $("#input-submit").on("click", function(event) {
   event.preventDefault();
 
   //Validation
+
   inputValidation("name");
   inputValidation("email");
   inputValidation("message");
+
+  if (
+    inputValidation("name") &&
+    inputValidation("email") &&
+    inputValidation("message")
+  ) {
+    let email = $("#input-email");
+    let message = $("#input-message");
+    let name = $("#input-name");
+
+    Email.send({
+      SecureToken: "90be18cd-f4fa-4f3c-9c95-ff4639bf9673",
+      To: "hello@marktiddy.co.uk",
+      From: `${email[0].value}`,
+      Subject: `Portfolio email from ${name[0].value}`,
+      Body: `${message[0].value}`
+    }).then(
+      $("#sent-message")
+        .fadeIn()
+        .show(),
+
+      (email[0].value = ""),
+      (message[0].value = ""),
+      (name[0].value = ""),
+      setTimeout(hideSuccess, 4000)
+    );
+  }
 });
+
+//Hide sucess
+function hideSuccess() {
+  $("#sent-message")
+    .fadeOut()
+    .hide();
+}
 
 //Function to validate
 function inputValidation(field) {
@@ -86,11 +121,13 @@ function inputValidation(field) {
     $(`#${field}-error`)
       .hide()
       .fadeOut();
+    return true;
   } else {
     $(`#${field}-error`)
       .fadeIn()
       .show();
+    return false;
   }
 }
 
-//To write!
+//Code to send an email

@@ -394,6 +394,16 @@ textarea {
   display: none;
 }
 
+.contact-item .success {
+  border: 1px solid var(--off-white);
+  text-align: left;
+  font-size: 12px;
+  padding: 5px 5px 5px 5px;
+  background-color: green;
+  color: var(--off-white);
+  display: none;
+}
+
 .half {
   float: left;
   width: 48%;

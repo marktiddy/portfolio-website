@@ -386,12 +386,7 @@
         </p>
       </div>
       <div class="contact-item">
-        <form
-          class="cf"
-          action="mailto:hello@marktiddy.co.uk"
-          method="post"
-          enctype="text/plain"
-        >
+        <form class="cf">
           <div class="half left cf">
             <input type="text" id="input-name" placeholder="Name" />
             <p class="error" id="name-error">ERROR: Please enter a name</p>
@@ -411,6 +406,9 @@
             </p>
           </div>
           <input type="submit" value="Send Message" id="input-submit" />
+          <p class="success" id="sent-message">
+            SUCCESS! - Your message has been sent!
+          </p>
         </form>
       </div>
     </div>
@@ -452,6 +450,7 @@
     ></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
 
