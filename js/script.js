@@ -130,4 +130,26 @@ function inputValidation(field) {
   }
 }
 
-//Code to send an email
+//Mobile menu scripts
+//global variable to keep track of showing
+var isMenuVisible = false;
+
+//mobile menu function
+function mobileMenu() {
+  var x = $(".navigation-list__item");
+  var bars = $("#mobile-bars");
+  if (isMenuVisible) {
+    x.fadeOut().hide();
+    isMenuVisible = false;
+    bars.show();
+  } else {
+    x.fadeIn().show();
+    isMenuVisible = true;
+    bars.show();
+  }
+
+  // var x = document.getElementById("mobile-nav__links");
+  // if (x.style.display === "block") {
+  //   x.style.display = "none";
+  // } else x.style.display = "block";
+}
