@@ -130,10 +130,19 @@ a {
   opacity: 0.7;
 }
 
+.home-buttons__container {
+  margin: 0 auto;
+  background-color: var(--off-white);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 20px;
+  padding-left: 25px;
+}
+
 .profile {
   margin: 0 auto;
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   background-color: var(--off-white);
   color: var(--primary-color);
   display: grid;
@@ -252,7 +261,7 @@ form button {
   background-color: var(--off-white);
   border-radius: 1%;
   border: 1px solid var(--off-white);
-  height: 470px;
+  height: 480px;
   justify-items: stretch;
 }
 
@@ -466,7 +475,7 @@ hr {
     padding-bottom: 5px;
   }
   .profile__portrait {
-    width: 30%;
+    width: 40%;
     border-width: 3px;
   }
 
@@ -524,25 +533,28 @@ hr {
   .main-navigation {
     height: 20px;
   }
-}
 
-/*SVG Animation */
-
-@keyframes pulsing-apple {
-  from {
-    transform: scale(0.9, 0.9) translate(4px, 4px);
-    fill: black;
+  .home-buttons__container {
+    padding-bottom: 20px;
+    padding-left: 0px;
   }
-  to {
-    transform: scale(1, 1) translate(0px, 0px);
-    fill: darkgray;
-  }
-}
 
-.apple-logo {
-  animation-duration: 750ms;
-  animation-name: pulsing-apple;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+  #contact {
+    grid-template-columns: 1fr;
+  }
+
+  .half {
+    float: left;
+    margin-left: 10px;
+    width: 40%;
+    margin-bottom: 1em;
+  }
+
+  .right {
+    width: 50%;
+  }
+  #input-submit {
+    text-align: 2px;
+    margin-left: 5px;
+  }
 }

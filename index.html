@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  =======
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="favicon.ico" />
-    >>>>>>> new-design
     <!--STYLESHEETs-->
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link
@@ -16,9 +14,9 @@
       rel="stylesheet"
     />
     <!--CSS PREPROCESSOR-->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
     <!--CSS POSTPROCESSED-->
-    <!--<link rel="stylesheet" type="text/css" href="css/style.production.css">-->
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
 
     <meta charset="utf-8" />
     <title>Mark Tiddy - Portfolio</title>
@@ -102,12 +100,6 @@
           Node.js, Express.js, SQL, MongoDB, Swift, React, Vue.js and Angular. I
           am also used to working with GitHub for source control.
         </p>
-        <div class="home-buttons">
-          <a href="http://github.com/marktiddy" target="_blank" class="button"
-            >View My Code</a
-          >
-          <a href="#contact" class="button__secondary">Contact Me</a>
-        </div>
       </div>
       <div class="profile__item">
         <img
@@ -115,6 +107,14 @@
           alt="A photo of Mark"
           class="profile__portrait"
         />
+      </div>
+    </div>
+    <div class="home-buttons__container">
+      <div class="home-buttons">
+        <a href="http://github.com/marktiddy" target="_blank" class="button"
+          >View My Code</a
+        >
+        <a href="#contact" class="button__secondary">Contact Me</a>
       </div>
     </div>
 
@@ -467,7 +467,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/script.js"></script>
+    <!--My JS - 1st file is normal, 2nd is minified-->
+    <!--<script src="js/script.js"></script>-->
+    <script src="js/script_min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
