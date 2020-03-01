@@ -143,7 +143,7 @@ a {
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   padding-left: 25px;
 }
 
@@ -155,8 +155,6 @@ a {
   color: #2e4c7e;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 0px 1fr;
-  grid-template-columns: 2fr 1fr;
   grid-gap: 0px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -172,12 +170,12 @@ a {
 }
 
 .profile__portrait {
-  margin-right: 50px;
-  margin-left: 20px;
+  margin-right: 10px;
   min-width: 100px;
-  max-width: 250px;
+  max-width: 230px;
   border-radius: 1%;
   border: 3px solid #2e4c7e;
+  float: left;
 }
 
 .home-buttons {
@@ -191,13 +189,14 @@ a {
 .button {
   border: 1px solid #2e4c7e;
   font-family: "Open Sans", sans-serif;
-  background-color: #f7f7f7;
-  color: #2e4c7e;
+  background-color: #2e4c7e;
+  color: #f7f7f7;
   text-decoration: none;
   padding: 10px;
   border-radius: 1%;
   font-weight: 300;
   margin-left: 10px;
+  border-radius: 0.15em;
   /*Button Animation*/
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -207,53 +206,60 @@ a {
 .button__secondary {
   border: 1px solid #2e4c7e;
   font-family: "Open Sans", sans-serif;
-  background-color: #f7f7f7;
-  color: #2e4c7e;
+  background-color: #2e4c7e;
+  color: #f7f7f7;
   text-decoration: none;
   padding: 10px;
   border-radius: 1%;
   font-weight: 300;
   margin-left: 10px;
+  border-radius: 0.15em;
   /*Button Animation*/
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+
 .button:hover {
   cursor: pointer;
-  color: #f7f7f7;
-  background-color: #2e4c7e;
+  color: #2e4c7e;
+  background-color: #f7f7f7;
 }
+
 .button:focus {
   cursor: pointer;
-  color: #f7f7f7;
-  background-color: #2e4c7e;
+  color: #2e4c7e;
+  background-color: #f7f7f7;
+}
+
+.btn-sm {
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .button__secondary {
-  background-color: #f7f7f7;
-  color: #333333;
+  background-color: #333333;
+  color: #f7f7f7;
   border: 1px solid #333333;
-  border-radius: 1%;
 }
 
 form button {
-  background-color: #f7f7f7;
-  color: #333333;
+  background-color: #333333;
+  color: #f7f7f7;
   border: 1px solid #333333;
-  border-radius: 1%;
 }
 
 .button__secondary:hover {
   cursor: pointer;
-  color: #f7f7f7;
-  background-color: #333333;
+  color: #333333;
+  background-color: #f7f7f7;
 }
 
 .button__secondary:focus {
   cursor: pointer;
-  color: #f7f7f7;
-  background-color: #333333;
+  color: #333333;
+  background-color: #f7f7f7;
 }
 
 .page-footer {
@@ -313,44 +319,36 @@ form button {
 .projects-grid__item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
-  margin: 15px;
+  -ms-grid-rows: 1fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+  margin: 10px;
   background-color: #f7f7f7;
   border-radius: 1%;
-  border: 1px solid #f7f7f7;
-  height: 480px;
+  border: 3px solid #333333;
+  height: 510px;
   justify-items: stretch;
+}
+
+.longer-item {
+  height: 580px;
+}
+
+.projects-grid__title {
+  text-align: center;
+  font-size: 20px;
+  height: 70px;
+  line-height: 1.2;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: #f7f7f7;
 }
 
 .projects-grid-top {
   list-style: none;
   position: relative;
   display: inline-block;
-}
-
-.projects-grid-top p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #f7f7f7;
-  padding: 25px;
-  border-radius: 1%;
-  opacity: 0.95;
-  font-size: 20px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.projects-grid-top p:hover {
-  padding: 27px;
-  opacity: 100%;
+  border-bottom: 3px solid #333333;
 }
 
 .projects-grid-top img {
@@ -363,7 +361,8 @@ form button {
 
 .projects__grid--content {
   text-align: center;
-  margin: 10px;
+  vertical-align: top;
+  padding: 5px;
 }
 
 .projects__grid--base {
@@ -426,8 +425,8 @@ form button {
 }
 
 .contact-info {
-  padding-left: 40px;
   line-height: 2em;
+  margin-right: 5px;
 }
 
 .pri-background {
@@ -531,19 +530,81 @@ textarea {
   font-size: 15px;
 }
 
-hr {
-  width: 70%;
-  padding-bottom: 5px;
+.divider {
+  width: 90%;
+  padding-bottom: 1px;
+  background-color: #333333;
+  text-align: center;
+
+  margin: 10px 5% 10px 5%;
 }
 
 #mobile-bars {
   display: none;
 }
 
+.skill-area {
+  background-color: red;
+  color: white;
+  font-size: 13px;
+  padding: 3px 7px;
+  margin-bottom: -13px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  display: inline-block;
+  border-radius: 0.25em;
+  font-weight: 700;
+}
+
+.html {
+  background-color: #e34928;
+}
+
+.css,
+.sql {
+  background-color: #2873b8;
+}
+
+.javascript {
+  background-color: #eedc5a;
+  color: #333333;
+}
+
+.react,
+.wordpress {
+  background-color: #4597ac;
+}
+
+.swift {
+  background-color: #e74227;
+}
+
+.node {
+  background-color: #8ec64a;
+  color: #333333;
+}
+.angular {
+  background-color: #c2002d;
+}
+
+.express {
+  background-color: #333333;
+}
+
+.bootstrap {
+  background-color: #563a78;
+}
+
+.vue,
+.mongo {
+  background-color: #35976d;
+}
+
 @media all and (max-width: 500px) {
   .projects-grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .main-navigation li {
@@ -559,18 +620,27 @@ hr {
     margin: 30px;
     float: right;
   }
+
+  .longer-item {
+    height: 600px;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .projects-grid {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .navigation-list__item {
     display: none;
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+  .projects-grid__item {
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 600px;
   }
 }
 
@@ -581,6 +651,7 @@ hr {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+
   .projects__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
@@ -606,6 +677,7 @@ hr {
 
   #mobile-bars {
     display: inline-block;
+    border: 1px solid #f7f7f7;
   }
 
   .main-navigation {
