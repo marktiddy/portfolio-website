@@ -148,3 +148,71 @@ function mobileMenu() {
     bars.show();
   }
 }
+
+//Set up animation
+
+window.sr = ScrollReveal({ reset: true });
+sr.reveal(".header--container", {
+  duration: 700,
+  origin: "left",
+  distance: "150px"
+});
+
+sr.reveal("#about", {
+  duration: 900,
+  origin: "right",
+  distance: "50px"
+});
+
+// sr.reveal(".skill-area", {
+//   duration: 500,
+//   origin: "left",
+//   distance: "50px"
+// });
+
+sr.reveal(".projects-title", {
+  duration: 500,
+  origin: "left",
+  distance: "50px"
+});
+
+sr.reveal(".animate-1", {
+  duration: 600,
+  origin: "bottom",
+  distance: "50px"
+});
+
+sr.reveal(".animate-2", {
+  duration: 500,
+  origin: "bottom",
+  distance: "120px"
+});
+
+sr.reveal("#contact", {
+  duration: 300,
+  origin: "left",
+  distance: "150px"
+});
+sr.reveal(".cf", {
+  duration: 600,
+  origin: "right",
+  distance: "75px"
+});
+
+sr.reveal(".contact-info", {
+  duration: 600,
+  origin: "left",
+  distance: "75px"
+});
+
+sr.reveal(".page-footer", {
+  duration: 500,
+  origin: "bottom",
+  distance: "150px"
+});
+
+sr.reveal(".social-media", {
+  duration: 600,
+  origin: "bottom",
+  distance: "75px"
+});
