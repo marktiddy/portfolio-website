@@ -95,6 +95,15 @@ a {
   margin-left: 15px;
 }
 
+.nav-s-m {
+  color: white;
+  padding-left: 5px;
+}
+
+.nav-s-m:hover {
+  opacity: 0.7;
+}
+
 .navigation-list__bars {
   color: white;
   padding: 5px 15px 5px 15px;
@@ -159,7 +168,7 @@ a {
 }
 
 .profile__portrait {
-  margin-right: 10px;
+  margin-right: 15px;
   min-width: 100px;
   max-width: 230px;
   border-radius: 1%;
@@ -362,6 +371,33 @@ form button {
   margin-right: 5px;
 }
 
+.contact-into {
+  border: 0px;
+  padding-left: 40px;
+  padding-bottom: 15px;
+}
+
+.contact-cell {
+  padding-left: 10px;
+}
+
+.social-media-table {
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+.social-media-table td {
+  text-align: center;
+  padding-left: 20px;
+}
+
+.social-media-table td:first-child {
+  padding-left: 0px;
+}
+
+.social-media-table td:hover {
+  opacity: 0.7;
+}
+
 .pri-background {
   background-color: var(--primary-color);
 }
@@ -551,11 +587,18 @@ textarea {
   .longer-item {
     height: 600px;
   }
+
+  .nav-s-m {
+    display: none;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+  .nav-s-m {
+    display: none;
   }
 
   .navigation-list__item {

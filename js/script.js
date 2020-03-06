@@ -154,13 +154,13 @@ function mobileMenu() {
 window.sr = ScrollReveal({ reset: true });
 sr.reveal(".header--container", {
   duration: 700,
-  origin: "left",
+  origin: "bottom",
   distance: "150px"
 });
 
 sr.reveal("#about", {
   duration: 900,
-  origin: "right",
+  origin: "bottom",
   distance: "50px"
 });
 
@@ -172,7 +172,7 @@ sr.reveal("#about", {
 
 sr.reveal(".projects-title", {
   duration: 500,
-  origin: "left",
+  origin: "bottom",
   distance: "50px"
 });
 
@@ -190,18 +190,18 @@ sr.reveal(".animate-2", {
 
 sr.reveal("#contact", {
   duration: 300,
-  origin: "left",
+  origin: "bottom",
   distance: "150px"
 });
 sr.reveal(".cf", {
   duration: 600,
-  origin: "right",
+  origin: "bottom",
   distance: "75px"
 });
 
 sr.reveal(".contact-info", {
   duration: 600,
-  origin: "left",
+  origin: "bottom",
   distance: "75px"
 });
 
