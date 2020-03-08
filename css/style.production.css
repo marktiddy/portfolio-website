@@ -664,6 +664,10 @@ textarea {
   .nav-s-m {
     display: none;
   }
+  .profile__item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -684,6 +688,10 @@ textarea {
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 600px;
+  }
+  .profile__item {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
