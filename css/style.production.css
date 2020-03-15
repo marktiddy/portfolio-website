@@ -171,6 +171,7 @@ a {
 }
 .profile__item {
   padding-left: 40px;
+  margin-top: -50px;
 }
 
 .profile h1 {
