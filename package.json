@@ -1,0 +1,11 @@
+{
+  "name": "Task 1 - Portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/marktiddy/portfolio-website.git",
+  "author": "Mark Tiddy <marktiddy@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
