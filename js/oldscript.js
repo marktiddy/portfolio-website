@@ -1,24 +1,73 @@
 //JQuery Smooth Scrolling
 
 $(document).ready(function () {
+  // Add smooth scrolling to all links
   $('a').on('click', function (event) {
+    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== '') {
+      // Prevent default anchor click behavior
       event.preventDefault();
 
+      // Store hash
       var hash = this.hash;
 
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate(
         {
           scrollTop: $(hash).offset().top,
         },
         900,
         function () {
+          // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         }
       );
+    } // End if
+  });
+
+  //some code for the menu classes
+  $('.navigation-list__item').click(function (e) {
+    var listOfItems = $('.navigation-list__item');
+    listOfItems.removeClass('navigation-list__item--active');
+    if ($(this).hasClass('navigation-list__item--active')) {
+      $(this).removeClass('navigation-list__item--active');
+    } else {
+      $(this).addClass('navigation-list__item--active');
     }
   });
 });
+
+//Code to update menu classes as we scroll
+$('#top').waypoint(
+  function (direction) {
+    $('.navigation-list__item').removeClass('navigation-list__item--active');
+    $('#home-button').addClass('navigation-list__item--active');
+  },
+  {
+    offset: '-20%',
+  }
+);
+
+$('#about').waypoint(function (direction) {
+  $('.navigation-list__item').removeClass('navigation-list__item--active');
+  $('#about-button').addClass('navigation-list__item--active');
+});
+
+$('#portfolio').waypoint(function (direction) {
+  $('.navigation-list__item').removeClass('navigation-list__item--active');
+  $('#portfolio-button').addClass('navigation-list__item--active');
+});
+
+$('#contact').waypoint(
+  function (direction) {
+    $('.navigation-list__item').removeClass('navigation-list__item--active');
+    $('#contact-button').addClass('navigation-list__item--active');
+  },
+  {
+    offset: '45%',
+  }
+);
 
 //form Validation
 
@@ -73,6 +122,25 @@ function inputValidation(field) {
   }
 }
 
+//Mobile menu scripts
+//global variable to keep track of showing
+var isMenuVisible = false;
+
+//mobile menu function
+function mobileMenu() {
+  var x = $('.navigation-list__item');
+  var bars = $('#mobile-bars');
+  if (isMenuVisible) {
+    x.fadeOut().hide();
+    isMenuVisible = false;
+    bars.show();
+  } else {
+    x.fadeIn().show();
+    isMenuVisible = true;
+    bars.show();
+  }
+}
+
 //Set up animation
 
 window.sr = ScrollReveal({ reset: true });
@@ -87,6 +155,12 @@ sr.reveal('#about', {
   origin: 'bottom',
   distance: '50px',
 });
+
+// sr.reveal(".skill-area", {
+//   duration: 500,
+//   origin: "left",
+//   distance: "50px"
+// });
 
 sr.reveal('.projects-title', {
   duration: 500,
