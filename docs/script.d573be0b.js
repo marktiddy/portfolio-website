@@ -120,82 +120,56 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"js/script.js":[function(require,module,exports) {
 //JQuery Smooth Scrolling
 $(document).ready(function () {
-  // Add smooth scrolling to all links
-  $("a").on("click", function (event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault(); // Store hash
-
-      var hash = this.hash; // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-
-      $("html, body").animate({
+  $('a').on('click', function (event) {
+    if (this.hash !== '') {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function () {
-        // Add hash (#) to URL when done scrolling (default click behavior)
+      }, 900, function () {
         window.location.hash = hash;
       });
-    } // End if
-
-  }); //some code for the menu classes
-
-  $(".navigation-list__item").click(function (e) {
-    var listOfItems = $(".navigation-list__item");
-    listOfItems.removeClass("navigation-list__item--active");
-
-    if ($(this).hasClass("navigation-list__item--active")) {
-      $(this).removeClass("navigation-list__item--active");
-    } else {
-      $(this).addClass("navigation-list__item--active");
     }
-  });
-}); //Code to update menu classes as we scroll
+  }); //Javascript for our top button
 
-$("#top").waypoint(function (direction) {
-  $(".navigation-list__item").removeClass("navigation-list__item--active");
-  $("#home-button").addClass("navigation-list__item--active");
-}, {
-  offset: "-20%"
-});
-$("#about").waypoint(function (direction) {
-  $(".navigation-list__item").removeClass("navigation-list__item--active");
-  $("#about-button").addClass("navigation-list__item--active");
-});
-$("#portfolio").waypoint(function (direction) {
-  $(".navigation-list__item").removeClass("navigation-list__item--active");
-  $("#portfolio-button").addClass("navigation-list__item--active");
-});
-$("#contact").waypoint(function (direction) {
-  $(".navigation-list__item").removeClass("navigation-list__item--active");
-  $("#contact-button").addClass("navigation-list__item--active");
-}, {
-  offset: "45%"
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  var scrollFunction = function scrollFunction() {
+    var topButton = document.getElementById('top-button');
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topButton.style.display = 'block';
+    } else {
+      topButton.style.display = 'none';
+    }
+  };
 }); //form Validation
 
-$("#input-submit").on("click", function (event) {
+$('#input-submit').on('click', function (event) {
   event.preventDefault(); //Validation
 
-  inputValidation("name");
-  inputValidation("email");
-  inputValidation("message");
+  inputValidation('name');
+  inputValidation('email');
+  inputValidation('message');
 
-  if (inputValidation("name") && inputValidation("email") && inputValidation("message")) {
-    var email = $("#input-email");
-    var message = $("#input-message");
-    var name = $("#input-name");
+  if (inputValidation('name') && inputValidation('email') && inputValidation('message')) {
+    var email = $('#input-email');
+    var message = $('#input-message');
+    var name = $('#input-name');
     Email.send({
-      SecureToken: "90be18cd-f4fa-4f3c-9c95-ff4639bf9673",
-      To: "hello@marktiddy.co.uk",
+      SecureToken: '90be18cd-f4fa-4f3c-9c95-ff4639bf9673',
+      To: 'hello@marktiddy.co.uk',
       From: "".concat(email[0].value),
       Subject: "Portfolio email from ".concat(name[0].value),
       Body: "".concat(message[0].value)
-    }).then($("#sent-message").fadeIn().show(), email[0].value = "", message[0].value = "", name[0].value = "", setTimeout(hideSuccess, 4000));
+    }).then($('#sent-message').fadeIn().show(), email[0].value = '', message[0].value = '', name[0].value = '', setTimeout(hideSuccess, 4000));
   }
 }); //Hide sucess
 
 function hideSuccess() {
-  $("#sent-message").fadeOut().hide();
+  $('#sent-message').fadeOut().hide();
 } //Function to validate
 
 
@@ -207,85 +181,36 @@ function inputValidation(field) {
     $("#".concat(field, "-error")).fadeIn().show();
     return false;
   }
-} //Mobile menu scripts
-//global variable to keep track of showing
-
-
-var isMenuVisible = false; //mobile menu function
-
-function mobileMenu() {
-  var x = $(".navigation-list__item");
-  var bars = $("#mobile-bars");
-
-  if (isMenuVisible) {
-    x.fadeOut().hide();
-    isMenuVisible = false;
-    bars.show();
-  } else {
-    x.fadeIn().show();
-    isMenuVisible = true;
-    bars.show();
-  }
 } //Set up animation
 
 
 window.sr = ScrollReveal({
   reset: true
 });
-sr.reveal(".header--container", {
+sr.reveal('#about-content', {
   duration: 700,
-  origin: "bottom",
-  distance: "150px"
+  origin: 'bottom',
+  distance: '150px'
 });
-sr.reveal("#about", {
-  duration: 900,
-  origin: "bottom",
-  distance: "50px"
-}); // sr.reveal(".skill-area", {
-//   duration: 500,
-//   origin: "left",
-//   distance: "50px"
-// });
-
-sr.reveal(".projects-title", {
-  duration: 500,
-  origin: "bottom",
-  distance: "50px"
+sr.reveal('#about-content', {
+  duration: 700,
+  origin: 'bottom',
+  distance: '150px'
 });
-sr.reveal(".animate-1", {
-  duration: 600,
-  origin: "bottom",
-  distance: "50px"
+sr.reveal('#profile-skills', {
+  duration: 700,
+  origin: 'bottom',
+  distance: '70px'
 });
-sr.reveal(".animate-2", {
-  duration: 500,
-  origin: "bottom",
-  distance: "120px"
+sr.reveal('#work-content', {
+  duration: 700,
+  origin: 'bottom',
+  distance: '150px'
 });
-sr.reveal("#contact", {
-  duration: 300,
-  origin: "bottom",
-  distance: "150px"
-});
-sr.reveal(".cf", {
-  duration: 600,
-  origin: "bottom",
-  distance: "75px"
-});
-sr.reveal(".contact-info", {
-  duration: 600,
-  origin: "bottom",
-  distance: "75px"
-});
-sr.reveal(".page-footer", {
-  duration: 500,
-  origin: "bottom",
-  distance: "150px"
-});
-sr.reveal(".social-media", {
-  duration: 600,
-  origin: "bottom",
-  distance: "75px"
+sr.reveal('.work-content-inner', {
+  duration: 700,
+  origin: 'bottom',
+  distance: '150px'
 });
 },{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -315,7 +240,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59393" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55540" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

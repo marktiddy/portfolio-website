@@ -4,7 +4,6 @@ $(document).ready(function () {
   $('a').on('click', function (event) {
     if (this.hash !== '') {
       event.preventDefault();
-
       var hash = this.hash;
 
       $('html, body').animate(
@@ -18,6 +17,23 @@ $(document).ready(function () {
       );
     }
   });
+  //Javascript for our top button
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  const scrollFunction = () => {
+    const topButton = document.getElementById('top-button');
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      topButton.style.display = 'block';
+    } else {
+      topButton.style.display = 'none';
+    }
+  };
 });
 
 //form Validation
@@ -76,61 +92,33 @@ function inputValidation(field) {
 //Set up animation
 
 window.sr = ScrollReveal({ reset: true });
-sr.reveal('.header--container', {
+
+sr.reveal('#about-content', {
   duration: 700,
   origin: 'bottom',
   distance: '150px',
 });
 
-sr.reveal('#about', {
-  duration: 900,
-  origin: 'bottom',
-  distance: '50px',
-});
-
-sr.reveal('.projects-title', {
-  duration: 500,
-  origin: 'bottom',
-  distance: '50px',
-});
-
-sr.reveal('.animate-1', {
-  duration: 600,
-  origin: 'bottom',
-  distance: '50px',
-});
-
-sr.reveal('.animate-2', {
-  duration: 500,
-  origin: 'bottom',
-  distance: '120px',
-});
-
-sr.reveal('#contact', {
-  duration: 300,
-  origin: 'bottom',
-  distance: '150px',
-});
-sr.reveal('.cf', {
-  duration: 600,
-  origin: 'bottom',
-  distance: '75px',
-});
-
-sr.reveal('.contact-info', {
-  duration: 600,
-  origin: 'bottom',
-  distance: '75px',
-});
-
-sr.reveal('.page-footer', {
-  duration: 500,
+sr.reveal('#about-content', {
+  duration: 700,
   origin: 'bottom',
   distance: '150px',
 });
 
-sr.reveal('.social-media', {
-  duration: 600,
+sr.reveal('#profile-skills', {
+  duration: 700,
   origin: 'bottom',
-  distance: '75px',
+  distance: '70px',
+});
+
+sr.reveal('#work-content', {
+  duration: 700,
+  origin: 'bottom',
+  distance: '150px',
+});
+
+sr.reveal('.work-content-inner', {
+  duration: 700,
+  origin: 'bottom',
+  distance: '150px',
 });
