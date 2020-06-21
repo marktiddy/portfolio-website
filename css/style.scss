@@ -357,6 +357,13 @@ footer {
   @include image-styling('/img/work/music_mentoring.jpg');
 }
 
+#musicmentoringportfolio {
+  @include image-styling('/img/work/musicmentoringportfolio.png');
+}
+#lecdeck {
+  @include image-styling(('/img/work/lecdeck.jpg'));
+}
+
 #lyricfinder {
   @include image-styling('/img/work/lyricfinder.jpg');
 }
