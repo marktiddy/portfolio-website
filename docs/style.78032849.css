@@ -201,6 +201,12 @@ img {
   color: #e2a031;
 }
 
+.dev-icon {
+  height: 2rem;
+  margin: 0px;
+  display: block;
+}
+
 #work {
   text-align: center;
   background: #2e4c7e;
