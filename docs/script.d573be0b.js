@@ -117,79 +117,102 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
+})({"js/script.js":[function(require,module,exports) {
+//JQuery Smooth Scrolling
+$(document).ready(function () {
+  $('a').on('click', function (event) {
+    if (this.hash !== '') {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function () {
+        window.location.hash = hash;
+      });
     }
-  }
+  }); //Javascript for our top button
 
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
+  window.onscroll = function () {
+    scrollFunction();
   };
 
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
+  var scrollFunction = function scrollFunction() {
+    var topButton = document.getElementById('top-button');
 
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topButton.style.display = 'block';
+    } else {
+      topButton.style.display = 'none';
     }
+  };
+}); //form Validation
 
-    cssTimeout = null;
-  }, 50);
-}
+$('#input-submit').on('click', function (event) {
+  event.preventDefault(); //Validation
 
-module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"normalize.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
+  inputValidation('name');
+  inputValidation('email');
+  inputValidation('message');
 
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+  if (inputValidation('name') && inputValidation('email') && inputValidation('message')) {
+    var email = $('#input-email');
+    var message = $('#input-message');
+    var name = $('#input-name');
+    Email.send({
+      SecureToken: '90be18cd-f4fa-4f3c-9c95-ff4639bf9673',
+      To: 'hello@marktiddy.co.uk',
+      From: "".concat(email[0].value),
+      Subject: "Portfolio email from ".concat(name[0].value),
+      Body: "".concat(message[0].value)
+    }).then($('#sent-message').fadeIn().show(), email[0].value = '', message[0].value = '', name[0].value = '', setTimeout(hideSuccess, 4000));
+  }
+}); //Hide sucess
+
+function hideSuccess() {
+  $('#sent-message').fadeOut().hide();
+} //Function to validate
+
+
+function inputValidation(field) {
+  if ($("#input-".concat(field)).val()) {
+    $("#".concat(field, "-error")).hide().fadeOut();
+    return true;
+  } else {
+    $("#".concat(field, "-error")).fadeIn().show();
+    return false;
+  }
+} //Set up animation
+
+
+window.sr = ScrollReveal({
+  reset: true
+});
+sr.reveal('#about-content', {
+  duration: 700,
+  origin: 'bottom',
+  distance: '150px'
+});
+sr.reveal('#about-content', {
+  duration: 700,
+  origin: 'bottom',
+  distance: '150px'
+});
+sr.reveal('#profile-skills', {
+  duration: 700,
+  origin: 'bottom',
+  distance: '70px'
+});
+sr.reveal('#work-content', {
+  duration: 700,
+  origin: 'bottom',
+  distance: '150px'
+});
+sr.reveal('.work-content-inner', {
+  duration: 700,
+  origin: 'bottom',
+  distance: '150px'
+});
+},{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +240,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57065" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63756" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -393,5 +416,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/normalize.0a915d5e.js.map
+},{}]},{},["../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/script.js"], null)
+//# sourceMappingURL=/script.d573be0b.js.map
