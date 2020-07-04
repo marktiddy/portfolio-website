@@ -45,10 +45,13 @@ $('#work-view-more').on('click', function (event) {
   if (section.classList.contains('hide-section')) {
     //Show section
     section.classList.remove('hide-section');
+    document.getElementById('work-view-more').innerText = 'View Less Projects';
     document.getElementById('show-logo').classList.add('hide-section');
     document.getElementById('hide-logo').classList.remove('hide-section');
   } else {
     section.classList.add('hide-section');
+    document.getElementById('work-view-more').innerText = 'View More Projects';
+
     document.getElementById('hide-logo').classList.add('hide-section');
     document.getElementById('show-logo').classList.remove('hide-section');
   }
