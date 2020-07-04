@@ -1,6 +1,9 @@
-//JQuery Smooth Scrolling
-
 $(document).ready(function () {
+  //Hide our extra section
+  document.getElementById('hide-logo').classList.add('hide-section');
+  document.getElementById('work-content-second').classList.add('hide-section');
+
+  //set up smooth scroll
   $('a').on('click', function (event) {
     if (this.hash !== '') {
       event.preventDefault();
@@ -34,6 +37,21 @@ $(document).ready(function () {
       topButton.style.display = 'none';
     }
   };
+});
+
+//Expand portfolio section
+$('#work-view-more').on('click', function (event) {
+  const section = document.getElementById('work-content-second');
+  if (section.classList.contains('hide-section')) {
+    //Show section
+    section.classList.remove('hide-section');
+    document.getElementById('show-logo').classList.add('hide-section');
+    document.getElementById('hide-logo').classList.remove('hide-section');
+  } else {
+    section.classList.add('hide-section');
+    document.getElementById('hide-logo').classList.add('hide-section');
+    document.getElementById('show-logo').classList.remove('hide-section');
+  }
 });
 
 //form Validation

@@ -213,7 +213,7 @@ img {
   width: 100%;
 }
 
-.work-content-inner {
+.work-content-inner, .work-content-inner-second {
   background: $main-color;
 }
 
@@ -221,6 +221,40 @@ img {
   background: $main-color;
   padding: 1rem;
 }
+
+
+#work-view-more {
+  height: 8vh;
+  display:flex;
+  background:$secondary-color;
+  justify-content: space-between;
+  padding-left: 5vw;
+  padding-right:5vh;
+  align-items: center;
+  color:$bg-color;
+  font-size:1.2rem;
+  background: linear-gradient(to right, $tint-color 50%, $secondary-color 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 500ms ease;
+}
+
+#work-view-more:hover {
+  cursor: pointer;
+  background-position: left bottom;
+  color: $main-color;
+}
+
+
+
+#work-content-second {
+  padding-top:5vh;
+}
+
+.hide-section {
+  display:none;
+}
+
 .work-text {
   background: $main-color;
 }
@@ -232,7 +266,7 @@ img {
   text-transform: none;
   color: $secondary-color;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
 
 .work-image {
@@ -473,12 +507,16 @@ textarea {
 
 .half {
   float: left;
-  width: 48%;
+  width: 98%;
   margin-bottom: 1em;
 }
 
 .right {
-  width: 50%;
+  width: 98%;
+}
+
+#input-message {
+  margin-top:0px;
 }
 
 .left {
@@ -518,7 +556,7 @@ textarea {
 
 .javascript {
   background-color: #eedc5a;
-  color: $secondary-color;
+  color: #0e0e0e;
 }
 
 .sass {
@@ -585,12 +623,13 @@ textarea {
     margin-bottom: 15px;
   }
 
-  .work-content-inner {
+  .work-content-inner, .work-content-inner-second {
     display: flex;
     height: auto;
     background: $main-color;
     margin: auto;
   }
+
 
   .reverse {
     flex-direction: row-reverse;
@@ -620,6 +659,24 @@ textarea {
   #profile-pic {
     width: 13rem;
   }
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+#input-message {
+  margin-top:15px;
+}
 }
 
 // CSS ANIMATIONS

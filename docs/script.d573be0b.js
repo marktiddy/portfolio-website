@@ -118,8 +118,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/script.js":[function(require,module,exports) {
-//JQuery Smooth Scrolling
 $(document).ready(function () {
+  //Hide our extra section
+  document.getElementById('hide-logo').classList.add('hide-section');
+  document.getElementById('work-content-second').classList.add('hide-section'); //set up smooth scroll
+
   $('a').on('click', function (event) {
     if (this.hash !== '') {
       event.preventDefault();
@@ -145,6 +148,21 @@ $(document).ready(function () {
       topButton.style.display = 'none';
     }
   };
+}); //Expand portfolio section
+
+$('#work-view-more').on('click', function (event) {
+  var section = document.getElementById('work-content-second');
+
+  if (section.classList.contains('hide-section')) {
+    //Show section
+    section.classList.remove('hide-section');
+    document.getElementById('show-logo').classList.add('hide-section');
+    document.getElementById('hide-logo').classList.remove('hide-section');
+  } else {
+    section.classList.add('hide-section');
+    document.getElementById('hide-logo').classList.add('hide-section');
+    document.getElementById('show-logo').classList.remove('hide-section');
+  }
 }); //form Validation
 
 $('#input-submit').on('click', function (event) {
@@ -240,7 +258,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56160" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54925" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

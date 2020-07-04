@@ -201,12 +201,6 @@ img {
   color: #e2a031;
 }
 
-.dev-icon {
-  height: 2rem;
-  margin: 0px;
-  display: block;
-}
-
 #work {
   text-align: center;
   background: #2e4c7e;
@@ -215,13 +209,51 @@ img {
   width: 100%;
 }
 
-.work-content-inner {
+.work-content-inner, .work-content-inner-second {
   background: #2e4c7e;
 }
 
 #work-content {
   background: #2e4c7e;
   padding: 1rem;
+}
+
+#work-view-more {
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #647db3;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 5vw;
+  padding-right: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #eee;
+  font-size: 1.2rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e2a031), color-stop(50%, #647db3));
+  background: linear-gradient(to right, #e2a031 50%, #647db3 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+#work-view-more:hover {
+  cursor: pointer;
+  background-position: left bottom;
+  color: #2e4c7e;
+}
+
+#work-content-second {
+  padding-top: 5vh;
+}
+
+.hide-section {
+  display: none;
 }
 
 .work-text {
@@ -235,7 +267,7 @@ img {
   text-transform: none;
   color: #647db3;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
 
 .work-image {
@@ -554,12 +586,16 @@ textarea {
 
 .half {
   float: left;
-  width: 48%;
+  width: 98%;
   margin-bottom: 1em;
 }
 
 .right {
-  width: 50%;
+  width: 98%;
+}
+
+#input-message {
+  margin-top: 0px;
 }
 
 .left {
@@ -598,7 +634,7 @@ textarea {
 
 .javascript {
   background-color: #eedc5a;
-  color: #647db3;
+  color: #0e0e0e;
 }
 
 .sass {
@@ -668,7 +704,7 @@ textarea {
     display: inline-block;
     margin-bottom: 15px;
   }
-  .work-content-inner {
+  .work-content-inner, .work-content-inner-second {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -708,6 +744,20 @@ textarea {
   }
   #profile-pic {
     width: 13rem;
+  }
+  .half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+  }
+  .right {
+    width: 50%;
+  }
+  .left {
+    margin-right: 2%;
+  }
+  #input-message {
+    margin-top: 15px;
   }
 }
 
