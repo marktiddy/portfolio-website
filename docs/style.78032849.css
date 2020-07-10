@@ -143,8 +143,8 @@ img {
 }
 
 #landing-image {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.5)), to(rgba(46, 76, 126, 0.5))), url("/img/bg-image.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.5), rgba(46, 76, 126, 0.5)), url("/img/bg-image.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.5)), to(rgba(46, 76, 126, 0.5))), url("/bg-image.c33f9d7b.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.5), rgba(46, 76, 126, 0.5)), url("/bg-image.c33f9d7b.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -379,128 +379,128 @@ footer {
 }
 
 #questions {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/100questions.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/100questions.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/100questions.3dea445d.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/100questions.3dea445d.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #ywr {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/ywr.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/ywr.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/ywr.f66ea9c1.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/ywr.f66ea9c1.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #portfolio {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/portfolio.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/portfolio.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/portfolio.d3c55d83.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/portfolio.d3c55d83.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #myflix {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/movie_api.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/movie_api.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/movie_api.caba1120.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/movie_api.caba1120.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #backroomstereo {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/backroomstereo.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/backroomstereo.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/backroomstereo.455fa3e3.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/backroomstereo.455fa3e3.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #ticklist {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/vue_todo.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/vue_todo.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/vue_todo.7be0a272.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/vue_todo.7be0a272.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #musicmentoring {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/music_mentoring.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/music_mentoring.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/music_mentoring.6c2c6143.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/music_mentoring.6c2c6143.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #musicmentoringportfolio {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/musicmentoringportfolio.png");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/musicmentoringportfolio.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/musicmentoringportfolio.69d27e0a.png");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/musicmentoringportfolio.69d27e0a.png");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #lecdeck {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/lecdeck.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/lecdeck.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/lecdeck.ebd03f77.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/lecdeck.ebd03f77.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #lyricfinder {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/lyricfinder.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/lyricfinder.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/lyricfinder.e596216e.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/lyricfinder.e596216e.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #pokemon {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/pokemon.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/pokemon.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/pokemon.1cb35896.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/pokemon.1cb35896.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #charityapp {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/charityapp.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/charityapp.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/charityapp.e85a4322.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/charityapp.e85a4322.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #usatip {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/usatip.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/usatip.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/usatip.9fa52669.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/usatip.9fa52669.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #thisorthat {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/thisorthat.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/thisorthat.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/thisorthat.327d7dcb.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/thisorthat.327d7dcb.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #hangout {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/hangout.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/hangout.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/hangout.4efc1b5e.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/hangout.4efc1b5e.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
 }
 
 #buildaquiz {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/buildaquiz.jpg");
-  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/buildaquiz.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/buildaquiz.2ecd216a.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/buildaquiz.2ecd216a.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;
@@ -795,4 +795,6 @@ textarea {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=/style.78032849.css.map */
