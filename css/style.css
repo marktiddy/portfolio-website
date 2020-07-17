@@ -292,6 +292,7 @@ img {
 
 .project-text {
   font-weight: 300;
+  margin-right: 5px;
 }
 
 .btn-small {
@@ -461,6 +462,30 @@ footer {
 #pokemon {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/pokemon.jpg");
   background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/pokemon.jpg");
+  background-position: center;
+  background-size: fit;
+  background-repeat: no-repeat;
+}
+
+#chatapp {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/chatapp.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/chatapp.jpg");
+  background-position: center;
+  background-size: fit;
+  background-repeat: no-repeat;
+}
+
+#blog {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/blog.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/blog.jpg");
+  background-position: center;
+  background-size: fit;
+  background-repeat: no-repeat;
+}
+
+#apps {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 76, 126, 0.2)), to(rgba(46, 76, 126, 0.2))), url("/img/work/apps.jpg");
+  background: linear-gradient(rgba(46, 76, 126, 0.2), rgba(46, 76, 126, 0.2)), url("/img/work/apps.jpg");
   background-position: center;
   background-size: fit;
   background-repeat: no-repeat;

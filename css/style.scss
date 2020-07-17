@@ -289,6 +289,7 @@ img {
 
 .project-text {
   font-weight: 300;
+  margin-right:5px;
 }
 
 .btn-small {
@@ -408,6 +409,18 @@ footer {
 
 #pokemon {
   @include image-styling('/img/work/pokemon.jpg');
+}
+
+#chatapp {
+  @include image-styling('/img/work/chatapp.jpg');
+}
+
+#blog {
+  @include image-styling('/img/work/blog.jpg');
+}
+
+#apps {
+  @include image-styling('/img/work/apps.jpg');
 }
 
 #charityapp {
