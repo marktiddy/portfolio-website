@@ -82,7 +82,7 @@ img {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 40vw;
           flex: 0 1 40vw;
-  height: 65vh;
+  height: 75vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -110,7 +110,7 @@ img {
   border-right: 2px solid #e2a031;
   border-left: 2px solid #e2a031;
   display: inline-block;
-  margin: 2rem 1rem;
+  margin: 1rem 1rem;
   color: #647db3;
   text-decoration: none;
   font-size: 1.25rem;

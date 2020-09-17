@@ -95,7 +95,7 @@ img {
 #landing-text {
   display: flex;
   flex: 0 1 40vw;
-  height: 65vh;
+  height: 75vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -120,7 +120,7 @@ img {
   border-right: 2px solid $tint-color;
   border-left: 2px solid $tint-color;
   display: inline-block;
-  margin: 2rem 1rem;
+  margin: 1rem 1rem;
   color: $secondary-color;
   text-decoration: none;
   font-size: 1.25rem;
