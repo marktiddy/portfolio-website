@@ -1,0 +1,989 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  scroll-behavior: smooth;
+}
+// $blue: #2a9d8f;
+// $orange: #e76f51;
+$blue: #002447;
+$orange: #fe8249;
+$superLight: 100;
+$light: 300;
+$regular: 400;
+$bold: 600;
+$white: #f9f9f9;
+$teal: #53d3d1;
+
+body {
+  background: $blue;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right:0;
+  z-index: 99999;
+  background: $blue;
+}
+
+
+nav ul, .mobile-menu ul {
+padding: 20px 30px;  
+list-style: none;
+}
+
+nav li , .mobile-menu li {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 20px;
+  border-bottom: 2px solid $white;
+  transition: all 400ms ease-in-out;
+}
+
+nav li a, .mobile-menu li a {
+  text-decoration: none;
+  color: $white;
+  transition: all 400ms ease-in-out;
+}
+
+nav li:hover, .mobile-menu li:hover {
+  border-bottom: 2px solid $orange;
+}
+
+nav li:hover a, .mobile-menu li:hover a {
+  color: $orange;
+}
+
+header {
+  display: flex;
+  min-height: 100vh;
+}
+
+.header-left {
+width: 45%;
+display: flex;
+padding:15% 80px 80px 80px;
+
+flex-direction: column;
+background: $white;
+}
+
+.header-left h1 {
+  font-size: 4rem;
+  font-weight: $light;
+  color: $blue;
+}
+
+.header-left p {
+margin-top: -40px;
+font-size: 1.3rem;
+color: $blue;
+}
+
+.header-right {
+width: 55%;
+background: $blue;
+}
+
+.header-image {
+  position: absolute;
+  top:25%;
+  right:10%;
+  width: 40%;
+}
+
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 50px;  
+  margin-left: 5px;
+}
+
+.social i {
+  color: $blue;
+  font-size: 2rem;
+  transition: all 400ms ease-in-out;
+}
+
+.social i:hover {
+  color: $orange;
+}
+
+
+.more-btn {
+  position: absolute;
+  right:80px;
+  bottom: 50px;
+  margin: 0 auto;
+}
+
+.more-btn p a {
+  display: inline-block;
+  padding: 10px;
+  border-bottom: 2px solid $orange;
+  color: $orange;
+  text-decoration: none;
+font-size: 1.2rem;
+font-weight: $light;
+transition: all 400ms linear;
+-webkit-animation: flicker-1 2s linear infinite both;
+	        animation: flicker-1 2s linear infinite both;
+}
+
+
+.more-btn p a:hover {
+  cursor: pointer;
+  color: $white;
+  border-bottom: 2px solid $white;
+}
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.about-left {
+  width: 67%;
+  background: $blue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  place-items: center;
+  padding: 50px;
+  font-weight: $light;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: $white;
+}
+
+.about-left p {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.about-left p:last-of-type {
+  margin-bottom: 0;
+}
+
+
+.about-right {
+  width: 33%;
+  background: $blue;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+.about-right img {
+  max-width: 80%;
+  border-radius: 2px;
+}
+
+.social-title {
+  margin-top:50px;
+  margin-bottom: 20px;
+  font-weight: $regular;
+}
+
+.next-btn {
+  position: absolute;
+  bottom:-10px;
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+}
+
+.next-btn p {
+  display: inline-block;
+  background: $blue;
+  padding: 20px;
+  border-radius: 50px;
+  transition: all 500ms ease-in-out;
+
+}
+
+.next-btn p a {
+  color: white;
+  text-decoration: none;
+}
+
+.next-btn p:hover {
+  background: $orange;
+  color: $blue;
+}
+
+.projects {
+  min-height: 100vh;
+  width: 100vw;
+  background: $white;
+  position: relative;
+}
+
+.projects-main {
+  color: $blue;
+  padding: 30px;
+}
+
+.projects-main h2 {
+  font-size: 2rem;
+  font-weight: $light;
+}
+
+.projects-main p {
+  font-weight: $light;
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+
+
+//Animation Classes
+.title-text {
+	-webkit-animation: slide-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.project-sorter {
+  padding: 0 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-sorter div {
+  padding-left: 10px;
+}
+
+.project-sorter h4 {
+color: $blue;
+font-weight: $bold;
+display: inline-block;
+}
+
+.project-sorter button {
+  background: none;
+  box-shadow: none;
+  border: none;
+  margin-left: 5px;
+  transition: all 400ms ease-in-out;
+  margin-bottom: 20px;
+  background: $blue;
+  color: $white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.project-sorter button:hover {
+  background: $orange;
+  cursor: pointer;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.project {
+  width: 32%;
+  margin: 5px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: block;
+  border: 2px solid $white;
+  transition: all 400ms ease-in-out;
+}
+
+.project:hover  {
+  cursor: pointer;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 5px;
+  height: 175px;
+  object-fit: cover;
+  object-position: center;
+  
+}
+
+.project h3 {
+  color: $blue;
+  font-weight: $light;
+  margin-top: 5px;
+  font-size: 1.4rem;
+  padding: 5px 10px 10px 5px;
+  line-height: 1.5;
+}
+
+.project p {
+  color: $blue;
+  font-weight: $light;
+  margin-top: 5px;
+}
+
+.project:hover {
+  border: 2px solid $blue;
+  cursor: pointer;
+  background: $blue;
+}
+
+.project:hover h3 {
+  color: $white !important;
+
+}
+
+
+.mixitup-control-active {
+  background: $orange !important;
+  color: $blue;
+}
+
+.modal {
+  background: rgba(0,0,0,0.5);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: 99999999;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+.modal-inner {
+  background: $white;
+  width: 80%;
+  height: 80%;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+}
+
+.modal-left, .modal-right {
+  width: 50%;
+  color: $blue;
+  padding: 20px;
+}
+
+.modal-left {
+  background: $blue;
+  color: $white;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.modal-left h3 {
+  font-size: 1.6rem;
+  font-weight: $light;
+  margin-bottom: 30px;
+}
+
+.modal-left img {
+  width: 90%;
+  border-radius: 5px;
+}
+
+.modal-buttons {
+  margin-top: 30px;
+  display: flex;
+}
+
+.modal-button {
+  background: $white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  color: $blue;
+  transition: all 200ms ease-in-out;
+}
+
+.modal-button:hover {
+  background: $orange;
+  color: $white;
+  cursor: pointer;
+}
+
+.modal-right {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-right p {
+  font-weight: $light;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.built-in {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  text-align: left;
+  width: 100%;
+}
+
+.built-in p {
+  margin:0 10px 15px 10px;
+  padding: 5px;
+  
+}
+
+
+
+.swift-tag, .html-tag, .css-tag, .native-tag, .sass-tag, .react-tag, .javascript-tag, .firebase-tag, .php-tag, .js-tag, .jquery-tag, .bootstrap-tag, .wordpress-tag, .mysql-tag, .nodejs-tag, .express-tag, .bootstrap-tag, .vue-tag, .mongodb-tag {
+  background: $orange;
+  border-radius: 5px;
+  color: $white;
+}
+
+.html-tag {
+  background: #e34928;
+}
+
+.css-tag, .mysql-tag, .jquery-tag, .php-tag {
+  background-color: #2873b8;
+}
+
+.javascript-tag, .firebase-tag {
+  background-color: #eedc5a;
+  color: #0e0e0e;
+}
+
+.react-tag, .native-tag, 
+.wordpress-tag, .flutter-tag {
+  background-color: #4597ac;
+}
+
+.nodejs-tag {
+  background-color: #8ec64a;
+}
+
+
+.express-tag {
+  background-color: #647db3;
+}
+
+.sass-tag {
+  background-color: #bf4080;
+}
+
+.bootstrap-tag {
+  background-color: #563a78;
+}
+
+.js-tag,
+.mongodb-tag {
+  background-color: #35976d;
+}
+
+.material-tag {
+  background: red;
+}
+
+.close {
+  background: $blue;
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 5px;
+  transition: all 400ms ease-in-out;
+}
+
+.close:hover {
+  background: $orange;
+  cursor: pointer;
+}
+
+.contact {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+}
+
+.contact-right p {
+  color: $blue;
+  font-size: 1.4rem;
+  font-weight: $light;
+  margin-bottom: 30px;
+}
+
+//Contact form area
+form {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: $light;
+}
+
+
+input,
+textarea {
+  border: 1px solid $blue;
+  border-radius: 5px;
+  outline: 0;
+  padding: 1em;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  resize: none;
+  color: $blue;
+}
+
+input:focus, textarea:focus {
+  border-color: $orange;
+}
+
+input::placeholder, textarea::placeholder {
+  color: $blue;
+  font-weight: $light;
+}
+
+#input-submit {
+  color: $white;
+  border:none;
+  cursor: pointer;
+  background: $blue;
+  transition: all 300ms ease-in-out;
+}
+
+#input-submit:hover {
+ background: $orange;
+  color: $white;
+}
+
+textarea {
+  height: 117px;
+}
+
+.error {
+  border: 1px solid $white;
+  text-align: left;
+  font-size: 12px !important;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: darkred;
+  color: $white !important;
+  display: none;
+  transition: all 500ms;
+}
+
+.success {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 12px !important;
+  padding: 5px 5px 5px 5px;
+  background-color: green !important;
+  color: $white !important;
+  display: none;
+  transition: all 500ms;
+  border-radius: 5px;
+}
+
+.half {
+  float: left;
+  width: 98%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 98%;
+}
+
+#input-message {
+  margin-top:0px;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+.contact-top {
+  position: absolute;
+  top: 30px;
+  left:30px;
+  width: 45%;
+}
+.contact h2 {
+  font-size: 2rem;
+  font-weight: $light;
+  margin-bottom: 30px;
+}
+
+.contact p {
+  font-weight: $light;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.contact-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.contact-table div {
+  padding: 10px 0;
+}
+
+.contact-table i {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.contact-table a {
+  color:$white;
+  margin-left: 10px;
+  transition: all 400ms ease-in-out;
+  text-decoration: none;
+  font-weight: $light;
+}
+
+.contact-table a:hover {
+  cursor: pointer;
+  color: $orange;
+}
+
+
+.contact-left {
+  width: 50%;
+  background: $blue;
+  padding: 30px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-right {
+  width: 50%;
+  background: $white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+}
+
+.contact-left .social i {
+  color: $white;
+}
+
+.footer {
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding: 15px 0 0 0;
+  color: $white;
+  background: $blue;
+  text-align:center;
+}
+
+.mobile-menu-bars {
+  position: absolute;
+  top: 20px;
+  right:20px;
+  color: $blue;
+  font-size: 2rem;
+  display: none;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  right:0;
+  bottom:0;
+  background: $blue;
+  width: 50%;
+  z-index: 999999;
+  transform: translateX(1550px);
+  transition: all 300ms ease-in-out;
+  display:none;
+}
+
+.show-menu {
+  transform: translateX(0)
+}
+
+.mobile-menu li {
+  width: 100%;
+  border:none;
+}
+
+.mobile-menu li:hover {
+  border:none;
+}
+
+.mobile-hide {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top:10px;
+  right:10px;
+  font-weight: $light;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .project {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+nav {
+  display: none;
+}
+
+.mobile-menu, .mobile-menu-bars {
+  display: block;
+}
+
+header, .contact {
+  flex-direction: column;
+}
+
+.about {
+  flex-direction: column-reverse;
+}
+
+.header-left, .header-right, .about-left, .about-right, .contact-left, .contact-right {
+  width: 100%;
+  min-height: 50vh;
+}
+
+.contact-left {
+  min-height: auto;
+}
+
+.contact-right p {
+  margin-bottom: 15px;
+}
+
+.header-left, .about-left {
+  padding: 30px;
+}
+
+.about-right {
+  padding:0;
+}
+.about img {
+width: auto;
+margin: 0 30px;
+padding:0;
+}
+
+.about-left p:last-of-type {
+  margin-bottom: 30px;
+}
+
+.header-image {
+top: 60%;
+width: 90%;
+left: 30px;
+}
+
+.more-btn {
+  right: 30px;
+  bottom: 30px;
+}
+
+.project {
+  width: 95%;
+}
+
+
+.contact-top {
+  position: relative;
+  width: 90%;
+}
+
+.footer {
+  position: relative;
+}
+
+.modal-inner {
+  flex-direction: column;
+  min-height: 95%;
+  height: auto;
+  width: 95%;
+}
+
+.modal-left, .modal-right {
+  width: 100%;
+}
+
+.modal-left {
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+
+}
+
+.close {
+  bottom: 30px;
+  top: auto;
+}
+
+}
+
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-12-5 17:25:46
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-blurred-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2020-12-5 17:28:15
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-12-6 11:7:25
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation flicker-1
+ * ----------------------------------------
+ */
+ @-webkit-keyframes flicker-1 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 1;
+  }
+  47.99% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  49.01% {
+    opacity: 1;
+  }
+}
+@keyframes flicker-1 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 1;
+  }
+  47.99% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  49.01% {
+    opacity: 1;
+  }
+}
